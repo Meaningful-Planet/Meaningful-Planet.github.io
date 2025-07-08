@@ -1,0 +1,79 @@
+[
+    {
+        "Title": "Kelp Restoration in Sussex",
+        "Description": "Reviving Sussex's underwater forests, this initiative aims to bring back vibrant kelp habitats, enhancing marine biodiversity and engaging local communities in marine conservation efforts.",
+        "Image": "project-1.jpg",
+        "Logo": "logo-14.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "Peatland Restoration across The Great Fen",
+        "Description": "Transforming the Great Fen with Europe's most ambitious peatland restoration project, creating a thriving wetland corridor for wildlife and people, ensuring a sustainable future for this historic landscape.",
+        "Image": "project-2.jpg",
+        "Logo": "logo-2.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "Helping Nature in North Yorkshire",
+        "Description": "Taking a variety of approaches to nurture nature's comeback in North Yorkshire, enhancing habitats for rare species from red squirrels to curlews, fostering biodiversity and ecological resilience.",
+        "Image": "project-3.jpg",
+        "Logo": "logo-6.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "Reintroducing Beavers Back to Northants",
+        "Description": "Meaningful Planet is thrilled to support the Wildlife Trust BCN's Project Beaver, an exciting initiative to reintroduce these fascinating creatures to Northamptonshire after a 400-year absence. Eurasian beavers, with their distinctive orange teeth and flat tails, are more than just cute; they're nature's engineers. By creating dams, ponds, and canals, beavers play a crucial role in shaping ecosystems, benefiting a wide range of wildlife from water beetles to birds, bats, frogs, and fish. This project at the Nene Wetlands nature reserve isn't just about bringing back a species - it's about restoring entire wetland habitats and the biodiversity they support.",
+        "Image": "project-4.jpg",
+        "Logo": "logo-2.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "Restoring Seagrass in the Solent",
+        "Description": "Dive into the underwater world of the Solent! Meaningful Planet is proud to support Hampshire & Isle of Wight Wildlife Trust's efforts to restore lush meadows of seagrass - nature's own superheroes. These amazing plants have been around since the dinosaurs and are vital for our marine ecosystem. They're not just pretty to look at; they're home to a diverse array of marine life, from tiny sea snails to elusive seahorses. This project, led by Dr. Tim Ferrero, aims to restore seagrass to its former glory in the Solent, creating a thriving underwater paradise.",
+        "Image": "project-5.jpg",
+        "Logo": "logo-4.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "Oyster Restoration in the Humber",
+        "Description": "Rebuilding oyster reefs in the Humber to filter water, support marine biodiversity, and protect shorelines, reinstating these natural water purifiers to their historic stronghold.",
+        "Image": "project-6.jpg",
+        "Logo": "logo-6.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "Reintroducing Pine Martens to the South East",
+        "Description": "Exploring the reintroduction of Pine Martens to restore ecological balance, this project evaluates the benefits of bringing back these native predators to the South East's woodlands.",
+        "Image": "project-7.jpg",
+        "Logo": "logo-14.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "Protecting Chalk Streams in Southern England",
+        "Description": "Did you know that England is home to 85% of the world's chalk streams? These rare and beautiful waterways are ecological treasures, and many of them flow right through Hampshire. Meaningful Planet is proud to support Hampshire & Isle of Wight Wildlife Trust's efforts to protect these precious habitats and the diverse life they support. This project focuses on preserving the delicate balance of invertebrate species in chalk streams, with a special emphasis on the nationally and internationally threatened white-clawed crayfish. By safeguarding these often-overlooked creatures, we're helping to maintain the health of entire ecosystems.",
+        "Image": "project-8.jpg",
+        "Logo": "logo-4.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "Rewilding and Increasing Biodiversity at Strawberry Hill",
+        "Description": "Meaningful Planet supports the Wildlife Trust BCN in protecting Strawberry Hill, transforming degraded farmland into vibrant habitats. This project boosts biodiversity, captures carbon, and safeguards rare wildlife like nightingales and turtle doves through rewilding and species reintroduction.",
+        "Image": "project-9.jpg",
+        "Logo": "logo-2.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "River Restoration at Ickenham Marshes",
+        "Description": "Meaningful Planet is proud to support London Wildlife Trust's efforts to restore the river ecosystem at Ickenham Marshes Nature Reserve. This vital project focuses on combating the invasive Himalayan balsam plant, which threatens the native biodiversity of this unique wetland habitat. By removing invasive species and reintroducing native aquatic plants, we're helping to create a healthier, more diverse environment that can support a wide range of wildlife, from dragonflies to damselflies, and potentially pave the way for the reintroduction of species like water voles.",
+        "Image": "project-10.jpg",
+        "Logo": "logo-3.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    },
+    {
+        "Title": "Grassland Restoration at Gutteridge Wood Nature Reserve",
+        "Description": "Meaningful Planet is excited to support London Wildlife Trust's efforts to restore the grasslands at Gutteridge Wood Nature Reserve. This vital project aims to combat the encroachment of competitive species like bramble and docks, which threaten the diversity of this unique habitat. Through a combination of mechanical removal and conservation grazing with cows, we're helping to create a more diverse grassland structure. This approach not only controls unwanted species but also benefits a wide range of wildlife, including invertebrates and small mammals, enhancing the overall biodiversity of this ancient woodland and meadow landscape.",
+        "Image": "project-11.jpg",
+        "Logo": "logo-3.png",
+        "Tags": ["Climate Action", "Biodiversity"]
+    }
+]
