@@ -4,7 +4,7 @@ function createHeader(activePage) {
 
     header.innerHTML = `
         <div id="header-content">
-            <a class="logo" href="/"><img src="images/logos/meaningful-planet-black.svg" alt="Meaningful Planet Logo"></a>
+            <a class="logo" href="/"><img src="images/logos/meaningful-planet-black.svg" alt="Meaningful Planet - sustainable telecoms management platform"></a>
             <nav class="nav">
                 <a href="index.html">Home</a>
                 <a href="solutions.html">Solutions</a>
