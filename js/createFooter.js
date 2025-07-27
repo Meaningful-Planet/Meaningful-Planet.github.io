@@ -8,10 +8,10 @@ function createFooter() {
         <div class="content">
             <div class="top">
                 <div class="left">
-                    <img src="images/logo-white.svg" alt="Meaningful Planet Logo" class="logo">
+                    <img src="images/logos/meaningful-planet-white.svg" alt="Meaningful Planet Logo" class="logo">
 
                     <div class="socials">
-                        <a target="_blank" href="https://www.linkedin.com/company/meaningful-planet/"><img src="images/social-linkedin.svg" alt="LinkedIn"></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/meaningful-planet/"><img src="images/social/social-linkedin.svg" alt="LinkedIn"></a>
                     </div>
 
                     <p id="locations">London • Cambridge • Isle of Wight</p>
@@ -33,7 +33,7 @@ function createFooter() {
                     <p>© Meaningful Planet ${currentYear}</p> <!-- Dynamically insert year -->
                     <p>All Rights Reserved</p>
                 </div>
-                <img src="images/logo-1-white.png" alt="Certified B Corporation" class="certified">
+                <img src="images/logos/b-corp-pending-white.png" alt="Certified B Corporation" class="certified">
             </div>
         </div>
     `;
