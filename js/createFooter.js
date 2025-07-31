@@ -8,13 +8,13 @@ function createFooter() {
         <div class="content">
             <div class="top">
                 <div class="left">
-                    <img src="images/logos/meaningful-planet-white.svg" alt="Meaningful Planet - sustainable telecoms management platform" class="logo">
+                    <img src="images/logos/1. Logo - Horizontal/SVG/White.svg" alt="Meaningful Planet - sustainable telecoms management platform" class="logo">
 
                     <div class="socials">
                         <a target="_blank" href="https://www.linkedin.com/company/meaningful-planet/"><img src="images/social/social-linkedin.svg" alt="Follow Meaningful Planet on LinkedIn"></a>
                     </div>
 
-                    <p id="locations">London • Cambridge • Isle of Wight • Hampshire • Sussex • Yorkshire • Bedfordshire</p>
+                    <p id="locations">Isle of Wight • Cambridge • London</p>
                 </div>
 
                 <div class="right">
