@@ -707,10 +707,12 @@ h3 {
   font-size: 18px;
   font-weight: 400;
   margin-top: 16px;
+  margin-bottom: 40px;
 }
 @media only screen and (max-width: 900px) {
   .hero-container #content h5 {
     font-size: 16px;
+    margin-bottom: 24px;
   }
 }
 .hero-container #content h1, .hero-container #content h5 {
