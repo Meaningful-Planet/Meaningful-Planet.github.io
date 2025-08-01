@@ -178,6 +178,7 @@
   background-size: cover;
   padding: 40px 0;
   color: white;
+  height: 820px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
