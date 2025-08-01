@@ -13,7 +13,7 @@ function setupCarousel(projects) {
         slide.innerHTML = `
             <img src="images/project-images/${project.Image}" class="slide-image" alt="${project.Title}">
             <div class="slide-content">
-                <img src="images/${project.Logo}" class="slide-logo" alt="${project.Title}">
+                <img src="images/logos/${project.Logo}" class="slide-logo" alt="${project.Title}">
                 <h2>${project.Title}</h2>
                 <p>${project.Description}</p>
                 <div class="tags">

@@ -4,7 +4,7 @@ function createHeader(activePage) {
 
     header.innerHTML = `
         <div id="header-content">
-            <a class="logo" href="/"><img src="images/logo.svg" alt="Meaningful Planet Logo"></a>
+            <a class="logo" href="/"><img src="images/logos/1.%20Logo%20-%20Horizontal/SVG/Colour%20-%20Light%20Backgrounds.svg" alt="Meaningful Planet - sustainable telecoms management platform"></a>
             <nav class="nav">
                 <a href="index.html">Home</a>
                 <a href="solutions.html">Solutions</a>
@@ -13,7 +13,7 @@ function createHeader(activePage) {
                 <a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a>
                 <a href="contact.html" class="secondary">Get a Quote</a>
             </nav>
-            <a id="menu" onClick="openMobileMenu()"><img id="logo" src="images/menu.svg"></a>
+            <a id="menu" onClick="openMobileMenu()"><img id="logo" src="images/icons/menu.svg"></a>
         </div>
 
         <div id="side-menu">
@@ -23,7 +23,7 @@ function createHeader(activePage) {
             <a href="about.html">About Us</a>
             <a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a>
             <a href="contact.html" class="cta">Get a Quote</a>
-            <a id="close" onClick="closeMobileMenu()"><img src="images/x.svg"></a>
+            <a id="close" onClick="closeMobileMenu()"><img src="images/icons/x.svg"></a>
         </div>
     `;
 

@@ -29,7 +29,7 @@ function loadProjectCards() {
 
                 const logo = document.createElement('img');
                 logo.classList.add('logo');
-                logo.src = `images/${project.Logo}`;
+                logo.src = `images/logos/${project.Logo}`;
 
                 logoWrapper.appendChild(logo);
 

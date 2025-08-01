@@ -178,7 +178,6 @@
   background-size: cover;
   padding: 40px 0;
   color: white;
-  height: 820px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -707,10 +706,12 @@ h3 {
   font-size: 18px;
   font-weight: 400;
   margin-top: 16px;
+  margin-bottom: 40px;
 }
 @media only screen and (max-width: 900px) {
   .hero-container #content h5 {
     font-size: 16px;
+    margin-bottom: 24px;
   }
 }
 .hero-container #content h1, .hero-container #content h5 {
@@ -1551,6 +1552,9 @@ iframe {
   #benefits-section .benefits-grid {
     flex-direction: column;
   }
+}
+#benefits-section .benefits-grid h3 {
+  margin-top: 20px;
 }
 #benefits-section .benefit {
   flex: 1;
