@@ -174,11 +174,10 @@
 
 .footer {
   position: relative;
-  background: url("../../images/backgrounds/footer-bg.svg") no-repeat top center;
+  background: url("../../images/footer-bg.svg") no-repeat top center;
   background-size: cover;
   padding: 40px 0;
   color: white;
-  height: 820px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -631,7 +630,7 @@ h3 {
   display: block;
 }
 .faq-container .faq-item.open .faq-question .faq-icon {
-  content: url("../../images/icons/chevron-up.svg");
+  content: url("../../images/chevron-up.svg");
 }
 
 @media only screen and (max-width: 1100px) {
@@ -646,7 +645,7 @@ h3 {
 }
 
 .hero-container {
-  background-image: url("../../images/backgrounds/home-bg.jpg");
+  background-image: url("../../images/home-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1554,11 +1553,14 @@ iframe {
     flex-direction: column;
   }
 }
+#benefits-section .benefits-grid h3 {
+  margin-top: 20px;
+}
 #benefits-section .benefit {
   flex: 1;
   display: flex;
   align-items: flex-start;
-  gap: 1px;
+  gap: 12px;
   flex-direction: column;
 }
 
@@ -1716,59 +1718,6 @@ iframe {
 @media only screen and (max-width: 1100px) {
   #simple-features {
     margin: 0 28px;
-  }
-}
-
-/* Contact Page Styles */
-.contact-header {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 80px 28px 60px;
-}
-
-.contact-header h1 {
-  color: #032D10;
-  font-size: 48px;
-  font-weight: 900;
-  margin-bottom: 24px;
-  line-height: 1.2;
-}
-
-.contact-header p {
-  color: #256751;
-  font-size: 20px;
-  line-height: 1.6;
-  margin: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .contact-header {
-    padding: 60px 20px 40px;
-  }
-  
-  .contact-header h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-header p {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .contact-header {
-    padding: 40px 16px 30px;
-  }
-  
-  .contact-header h1 {
-    font-size: 28px;
-    margin-bottom: 16px;
-  }
-  
-  .contact-header p {
-    font-size: 16px;
   }
 }
 
