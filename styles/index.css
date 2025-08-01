@@ -174,7 +174,7 @@
 
 .footer {
   position: relative;
-  background: url("../../images/footer-bg.svg") no-repeat top center;
+  background: url("../../images/backgrounds/footer-bg.svg") no-repeat top center;
   background-size: cover;
   padding: 40px 0;
   color: white;
@@ -645,7 +645,7 @@ h3 {
 }
 
 .hero-container {
-  background-image: url("../../images/home-bg.jpg");
+  background-image: url("../../images/backgrounds/home-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
