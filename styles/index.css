@@ -1572,11 +1572,11 @@ iframe {
   background-color: white;
   box-shadow: 0px 8px 28px -6px rgba(0, 0, 0, 0.04), 0px 18px 88px -4px rgba(0, 0, 0, 0.08);
   border-radius: 24px;
-  padding: 64px 64px 64px 0;
   gap: 24px;
   max-width: 1100px;
   margin: 64px auto 0 auto;
   box-sizing: border-box;
+  border-radius: 24px;
 }
 @media only screen and (max-width: 1100px) {
   #plan-features {
@@ -1591,12 +1591,24 @@ iframe {
 #plan-features .plan-illustration img {
   display: block;
   height: auto;
+  max-width: 450px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
 }
 @media only screen and (max-width: 1100px) {
   #plan-features .plan-illustration img {
     width: 100%;
-    border-radius: 32px;
-    margin-top: 16px;
+    margin-top: 32px;
+    border-radius: 24px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #plan-features .plan-illustration img {
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
   }
 }
 @media only screen and (max-width: 1100px) {

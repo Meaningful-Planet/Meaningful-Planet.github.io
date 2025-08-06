@@ -75,11 +75,11 @@ iframe {
     background-color: white;
     box-shadow: variables.$double-shadow;
     border-radius: 24px;
-    padding: 64px 64px 64px 0;
     gap: 24px;
     max-width: variables.$container-width;
     margin: 64px auto 0 auto;
     box-sizing: border-box;
+    border-radius: 24px;
 
     @media only screen and (max-width: variables.$container-width) {
         flex-direction: column;
@@ -90,14 +90,26 @@ iframe {
     .plan-illustration {
         flex-shrink: 0;
 
+
         img {
             display: block;
             height: auto;
+            max-width: 450px;
+            border-top-left-radius: 24px;
+            border-bottom-left-radius: 24px;
 
             @media only screen and (max-width: variables.$container-width) {
                 width: 100%;
-                border-radius: 32px;
-                margin-top: 16px;
+                margin-top: 32px;
+                border-radius: 24px;
+            }
+
+            @media only screen and (max-width: 550px) {
+                width: 100%;
+                margin-top: 0px;
+                border-radius: 0px;
+                border-top-left-radius: 24px;
+                border-top-right-radius: 24px;
             }
         }
     }
