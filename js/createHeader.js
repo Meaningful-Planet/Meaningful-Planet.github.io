@@ -12,7 +12,7 @@ function createHeader(activePage) {
                     <a href="solutions.html">Business <span class="nav__dropdown-arrow">▼</span></a>
 
                     <ul class="nav__dropdown-menu">
-                        <li class="nav__dropdown-item"><a href="#">Business Plans</a></li>
+                        <li class="nav__dropdown-item"><a href="business-plans-and-pricing.html">Plans & Pricing</a></li>
                         <li class="nav__dropdown-item"><a href="#">Enterprise Solutions</a></li>
                     </ul>
                 </div>
@@ -21,9 +21,9 @@ function createHeader(activePage) {
                     <a href="solutions.html">Personal <span class="nav__dropdown-arrow">▼</span></a>
 
                     <ul class="nav__dropdown-menu">
+                        <li class="nav__dropdown-item"><a href="#">Plans & Pricing</a></li>
                         <li class="nav__dropdown-item"><a href="#">Why Switch</a></li>
                         <li class="nav__dropdown-item"><a href="#">How it Works</a></li>
-                        <li class="nav__dropdown-item"><a href="#">Plans & Pricing</a></li>
                         <li class="nav__dropdown-item"><a href="#">Your Impact</a></li>
                     </ul>
                 </div>
@@ -41,24 +41,24 @@ function createHeader(activePage) {
             <div class="nav-mobile__item"><a href="index.html">Home</a></div>
 
             <div class="nav-mobile__item">
-                <button class="nav-mobile__dropdown-toggle" data-target="personalDropdown">
-                    Personal <span class="nav-mobile__dropdown-arrow">▼</span>
+                <button class="nav-mobile__dropdown-toggle" data-target="businessDropdown">
+                    Business <span class="nav-mobile__dropdown-arrow">< </span>
                 </button>
-                <ul class="nav-mobile__dropdown-menu" id="personalDropdown">
-                    <li class="nav-mobile__dropdown-item"><a href="#">Why Switch</a></li>
-                    <li class="nav-mobile__dropdown-item"><a href="#">How it Works</a></li>
-                    <li class="nav-mobile__dropdown-item"><a href="#">Plans & Pricing</a></li>
-                    <li class="nav-mobile__dropdown-item"><a href="#">Your Impact</a></li>
+                <ul class="nav-mobile__dropdown-menu" id="businessDropdown">
+                    <li class="nav-mobile__dropdown-item"><a href="business-plans-and-pricing.html">Plans & Pricing</a></li>
+                    <li class="nav-mobile__dropdown-item"><a href="#">Enterprise Solutions</a></li>
                 </ul>
             </div>
 
             <div class="nav-mobile__item">
-                <button class="nav-mobile__dropdown-toggle" data-target="businessDropdown">
-                    Business <span class="nav-mobile__dropdown-arrow">▼</span>
+                <button class="nav-mobile__dropdown-toggle" data-target="personalDropdown">
+                    Personal <span class="nav-mobile__dropdown-arrow">< </span>
                 </button>
-                <ul class="nav-mobile__dropdown-menu" id="businessDropdown">
-                    <li class="nav-mobile__dropdown-item"><a href="#">Business Plans</a></li>
-                    <li class="nav-mobile__dropdown-item"><a href="#">Enterprise Solutions</a></li>
+                <ul class="nav-mobile__dropdown-menu" id="personalDropdown">
+                    <li class="nav-mobile__dropdown-item"><a href="#">Plans & Pricing</a></li>
+                    <li class="nav-mobile__dropdown-item"><a href="#">Why Switch</a></li>
+                    <li class="nav-mobile__dropdown-item"><a href="#">How it Works</a></li>
+                    <li class="nav-mobile__dropdown-item"><a href="#">Your Impact</a></li>
                 </ul>
             </div>
 
