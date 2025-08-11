@@ -426,3 +426,45 @@
 .carousel-dot.active {
     background-color: rgba(variables.$dark-green, 1);
 }
+
+.reviews {
+    padding: 30px;
+
+    &__rating {
+        height: 25px;
+    }
+
+    &__review {
+        border-radius: 8px;
+        padding: 30px;
+        width: 282px;
+        margin: 0px 10px;
+        opacity: 0.8;
+
+        &:hover {
+            transition: transform 0.3s ease;
+            transform: translate3d(0px, 0px, 0px);
+            transform-style: preserve-3d;
+            box-shadow: 0 10px 15px -3px #0006;
+            opacity: 1;
+        }
+    }
+
+    &__header {
+        color: variables.$white;
+        margin: 0;
+        padding: 20px 0px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    &__text {
+        color: variables.$white;
+    }
+
+    &__reviewer {
+        color: variables.$white;
+        text-align: right;
+    }
+}

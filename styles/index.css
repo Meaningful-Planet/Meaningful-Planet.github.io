@@ -1142,6 +1142,42 @@ h3 {
   background-color: #063412;
 }
 
+.reviews {
+  padding: 30px;
+}
+.reviews__rating {
+  height: 25px;
+}
+.reviews__review {
+  border-radius: 8px;
+  padding: 30px;
+  width: 282px;
+  margin: 0px 10px;
+  opacity: 0.8;
+}
+.reviews__review:hover {
+  transition: transform 0.3s ease;
+  transform: translate3d(0px, 0px, 0px);
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+.reviews__header {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 20px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.reviews__text {
+  color: #FFFFFF;
+}
+.reviews__reviewer {
+  color: #FFFFFF;
+  text-align: right;
+}
+
 .impact-section {
   padding: 24px;
   display: flex;
