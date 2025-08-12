@@ -97,10 +97,12 @@ function createReviews() {
 
     reviewElement.innerHTML = `
       <div class="reviews__review" style="background-color: ${review.backgroundColor};">
-        <img class="reviews__rating" src="images/graphics/rating.png">
-        <h3 class="reviews__header">${review.header}</h3>
-        <p class="reviews__text">${review.content}</p>
-        <p class="reviews__reviewer">${review.author}</p>
+        <a class="reviews__review-body" href="${review.trustpilotUrl}" target="_blank">
+          <img class="reviews__rating" src="images/graphics/rating.png">
+          <h3 class="reviews__header">${review.header}</h3>
+          <p class="reviews__text">${review.content}</p>
+          <p class="reviews__reviewer">${review.author}</p>
+        </a>
       </div>
     `
 

@@ -1150,17 +1150,20 @@ h3 {
 }
 .reviews__review {
   border-radius: 8px;
-  padding: 30px;
   width: 282px;
   margin: 0px 10px;
   opacity: 0.8;
 }
 .reviews__review:hover {
   transition: transform 0.3s ease;
-  transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px) scale3d(1.03, 1.03, 1.03) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
   opacity: 1;
+}
+.reviews__review-body {
+  padding: 30px;
+  display: block;
 }
 .reviews__header {
   color: #FFFFFF;
@@ -1176,6 +1179,10 @@ h3 {
 .reviews__reviewer {
   color: #FFFFFF;
   text-align: right;
+}
+
+.flickity-viewport {
+  padding: 30px 0px;
 }
 
 .impact-section {
@@ -1886,13 +1893,19 @@ iframe {
   color: #222;
   font-size: 16px;
 }
+.mobile-plans__prices-container {
+  position: relative;
+  height: 620px;
+}
 .mobile-plans__prices {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
   margin: 40px 0;
-  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
 }
 @media only screen and (max-width: 1023px) {
   .mobile-plans__prices {
@@ -1904,8 +1917,10 @@ iframe {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  display: flex;
   margin: 40px 0;
+  transition: all, opacity 1300ms;
+  opacity: 1;
+  z-index: 10;
 }
 @media only screen and (max-width: 1023px) {
   .mobile-plans__prices--active {
@@ -1944,13 +1959,13 @@ iframe {
   height: auto;
   overflow: visible;
   border-radius: 8px;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
 }
 .mobile-plans__price:hover {
   transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   filter: brightness(110%);
   box-shadow: 0 50px 80px -20px rgba(0, 0, 0, 0.4);
+  transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
 }
 .mobile-plans__price:hover .mobile-plans__label {
   display: block;

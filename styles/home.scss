@@ -436,18 +436,22 @@
 
     &__review {
         border-radius: 8px;
-        padding: 30px;
         width: 282px;
         margin: 0px 10px;
         opacity: 0.8;
 
         &:hover {
             transition: transform 0.3s ease;
-            transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px) scale3d(1.03, 1.03, 1.03) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
             box-shadow: 0 10px 15px -3px #0006;
             opacity: 1;
         }
+    }
+
+    &__review-body {
+        padding: 30px;
+        display: block;
     }
 
     &__header {
@@ -467,4 +471,8 @@
         color: variables.$white;
         text-align: right;
     }
+}
+
+.flickity-viewport {
+    padding: 30px 0px;
 }
