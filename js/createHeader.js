@@ -9,11 +9,12 @@ function createHeader(activePage) {
                 <div class="nav__item"><a href="index.html">Home</a></div>
 
                 <div class="nav__item">
-                    <a href="solutions.html">Business <span class="nav__dropdown-arrow">▼</span></a>
+                    <a href="business.html">Business <span class="nav__dropdown-arrow">▼</span></a>
 
                     <ul class="nav__dropdown-menu">
-                        <li class="nav__dropdown-item"><a href="business-plans-and-pricing.html">Plans & Pricing</a></li>
-                        <li class="nav__dropdown-item"><a href="#">Enterprise Solutions</a></li>
+                        <li class="nav__dropdown-item"><a href="solutions.html">Business Solutions</a></li>
+                         <li class="nav__dropdown-item"><a href="partners.html">Our Partners</a></li>
+                        <li class="nav__dropdown-item"><a href="contact.html">Get a Quote</a></li>
                     </ul>
                 </div>
 
@@ -24,13 +25,13 @@ function createHeader(activePage) {
                         <li class="nav__dropdown-item"><a href="#">Plans & Pricing</a></li>
                         <li class="nav__dropdown-item"><a href="#">Why Switch</a></li>
                         <li class="nav__dropdown-item"><a href="#">How it Works</a></li>
-                        <li class="nav__dropdown-item"><a href="#">Your Impact</a></li>
                     </ul>
                 </div>
 
-                <div class="nav__item"><a href="solutions.html">Solutions</a></div>
+                <div class="nav__item"><a href="coverage.html">Coverage</a></div>
                 <div class="nav__item"><a href="impact.html">Our Impact</a></div>
                 <div class="nav__item"><a href="about.html">About Us</a></div>
+                <div class="nav__item"><a href="about.html">Help & Support</a></div>
                 <div class="nav__item"><a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a></div>
                 <div class="nav__item"><a href="contact.html" class="secondary">Get a Quote</a></div>
             </nav>
