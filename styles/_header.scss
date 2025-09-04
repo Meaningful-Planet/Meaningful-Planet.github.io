@@ -5,7 +5,7 @@
 }
 
 #header-content {
-    max-width: variables.$container-width;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 40px;
     display: flex;
@@ -60,7 +60,7 @@
     display: flex;
     align-items: center;
     font-weight: 700;
-    gap: 36px;
+    gap: 28px;
     color: variables.$dark-green;
 
     @media only screen and (max-width: 1200px) {
@@ -217,7 +217,7 @@
         &.active {
             .nav-mobile__dropdown-arrow {
                 display: inline-block;
-                transform: rotate(270deg);
+                transform: rotate(0deg);
             }
         }
     }
@@ -225,6 +225,8 @@
     &__dropdown-arrow {
         transition: transform 0.3s;
         font-size: 12px;
+        transform: rotate(270deg);
+        display: inline-block;
     }
 
     &__dropdown-menu {

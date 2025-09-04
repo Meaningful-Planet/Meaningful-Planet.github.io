@@ -1,10 +1,37 @@
-/* Use Google Font: Figtree via link tags in HTML */
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../fonts/Satoshi-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
 .header {
   width: 100%;
 }
 
 #header-content {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 40px;
   display: flex;
@@ -62,7 +89,7 @@
   display: flex;
   align-items: center;
   font-weight: 700;
-  gap: 36px;
+  gap: 28px;
   color: #063412;
 }
 @media only screen and (max-width: 1200px) {
@@ -208,11 +235,13 @@
 }
 .nav-mobile__dropdown-toggle.active .nav-mobile__dropdown-arrow {
   display: inline-block;
-  transform: rotate(270deg);
+  transform: rotate(0deg);
 }
 .nav-mobile__dropdown-arrow {
   transition: transform 0.3s;
   font-size: 12px;
+  transform: rotate(270deg);
+  display: inline-block;
 }
 .nav-mobile__dropdown-menu {
   max-height: 0;
@@ -1364,7 +1393,7 @@ h3 {
 }
 
 * {
-  font-family: "Figtree", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: "Satoshi", sans-serif;
   margin: 0;
   padding: 0;
   color: #063412;

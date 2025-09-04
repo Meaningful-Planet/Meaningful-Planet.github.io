@@ -43,7 +43,7 @@ function createHeader(activePage) {
 
             <div class="nav-mobile__item">
                 <button class="nav-mobile__dropdown-toggle" data-target="businessDropdown">
-                    Business <span class="nav-mobile__dropdown-arrow">< </span>
+                    Business <span class="nav-mobile__dropdown-arrow">▼</span>
                 </button>
                 <ul class="nav-mobile__dropdown-menu" id="businessDropdown">
                     <li class="nav-mobile__dropdown-item"><a href="business-plans-and-pricing.html">Plans & Pricing</a></li>
@@ -53,7 +53,7 @@ function createHeader(activePage) {
 
             <div class="nav-mobile__item">
                 <button class="nav-mobile__dropdown-toggle" data-target="personalDropdown">
-                    Personal <span class="nav-mobile__dropdown-arrow">< </span>
+                    Personal <span class="nav-mobile__dropdown-arrow">▼</span>
                 </button>
                 <ul class="nav-mobile__dropdown-menu" id="personalDropdown">
                     <li class="nav-mobile__dropdown-item"><a href="#">Plans & Pricing</a></li>
