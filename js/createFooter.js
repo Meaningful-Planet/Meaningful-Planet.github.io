@@ -14,7 +14,7 @@ function createFooter() {
                         <a target="_blank" href="https://www.linkedin.com/company/meaningful-planet/"><img src="images/social/social-linkedin.svg" alt="Follow Meaningful Planet on LinkedIn"></a>
                     </div>
 
-                    <p id="locations">Isle of Wight • Ipswich • Inverness • London</p>
+                    <p id="locations">Isle of Wight • Cambridge • Inverness • London</p>
                 </div>
 
                 <div class="right">

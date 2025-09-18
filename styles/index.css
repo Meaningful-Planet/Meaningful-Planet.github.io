@@ -728,7 +728,6 @@ h3 {
 }
 
 .hero-container {
-  background-image: url("../../images/backgrounds/landing-page-cover-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -738,6 +737,12 @@ h3 {
   align-items: center;
   padding: 0 40px;
   color: #000000;
+}
+.hero-container__main {
+  background-image: url("../../images/backgrounds/landing-page-cover.jpg");
+}
+.hero-container__business {
+  background-image: url("../../images/backgrounds/business-page-cover.jpg");
 }
 @media only screen and (max-width: 1024px) {
   .hero-container {
