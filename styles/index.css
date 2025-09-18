@@ -746,11 +746,23 @@ h3 {
 }
 .hero-container__personal {
   background-image: url("../../images/backgrounds/personal-page-cover.jpg");
+  height: 1100px;
+}
+@media only screen and (max-width: 1024px) {
+  .hero-container__personal {
+    height: 1470px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .hero-container {
     padding: 0 28px;
   }
+}
+.hero-container__image {
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  height: 150px;
 }
 .hero-container #trustpilot {
   cursor: pointer;
@@ -778,6 +790,11 @@ h3 {
     margin-top: 32px;
   }
 }
+.hero-container__buttons {
+  padding: 0px 0px 50px 0px;
+  display: flex;
+  gap: 25px;
+}
 .hero-container__button {
   display: inline-block;
   font-size: 20px;
@@ -789,6 +806,15 @@ h3 {
   width: fit-content;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+@media only screen and (max-width: 1024px) {
+  .hero-container__button {
+    padding: 16px 22px;
+    font-size: 16px;
+  }
+}
+.hero-container__button:hover {
+  transform: scale(0.95);
+}
 .hero-container__button--green {
   background: linear-gradient(to bottom right, #063412, #1E7255);
   color: #FFFFFF;
@@ -799,9 +825,22 @@ h3 {
 }
 .hero-container__span {
   font-size: 16px;
-  font-style: italic;
   font-weight: 400;
   line-height: normal;
+}
+.hero-container__span--italic {
+  font-style: italic;
+}
+.hero-container__span--center {
+  text-align: center;
+}
+.hero-container__text--center {
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .hero-container__text {
+    text-align: center;
+  }
 }
 .hero-container #content {
   text-align: center;
@@ -854,6 +893,16 @@ h3 {
     gap: 12px;
   }
 }
+.hero-container #content .features__icon {
+  width: 64px;
+  height: 64px;
+}
+@media only screen and (max-width: 1024px) {
+  .hero-container #content .features__icon {
+    width: 52px;
+    height: 52px;
+  }
+}
 .hero-container #content .features div {
   display: flex;
   flex-direction: column;
@@ -885,21 +934,6 @@ h3 {
     padding: 16px 32px;
     font-size: 16px;
     gap: 16px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .hero-container #content .features div p {
-    text-align: center;
-  }
-}
-.hero-container #content .features div img {
-  width: 64px;
-  height: 64px;
-}
-@media only screen and (max-width: 1024px) {
-  .hero-container #content .features div img {
-    width: 52px;
-    height: 52px;
   }
 }
 
@@ -1074,6 +1108,66 @@ h3 {
   }
 }
 
+.light-boxes {
+  max-width: 1100px;
+  margin: 64px auto 32px auto;
+}
+@media only screen and (max-width: 1100px) {
+  .light-boxes {
+    margin: 64px 28px 32px 28px;
+  }
+}
+.light-boxes__box {
+  flex: 2 0 42%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 24px;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  box-shadow: 0px 8px 28px -6px rgba(0, 0, 0, 0.04), 0px 18px 88px -4px rgba(0, 0, 0, 0.08);
+}
+@media only screen and (max-width: 1100px) {
+  .light-boxes__box {
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+  }
+}
+.light-boxes__box-row {
+  display: flex;
+  flex-direction: column;
+}
+.light-boxes #boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media only screen and (max-width: 1100px) {
+  .light-boxes #boxes {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .light-boxes #boxes img {
+    width: 48px;
+    height: 48px;
+  }
+}
+.light-boxes #boxes h4 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  color: #000000;
+  padding-bottom: 50px;
+}
+.light-boxes #boxes p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .carousel {
   position: relative;
   max-width: 1100px;
@@ -1218,6 +1312,13 @@ h3 {
   padding: 30px;
   display: block;
 }
+.reviews__head {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
 .reviews__header {
   color: #FFFFFF;
   margin: 0;
@@ -1348,6 +1449,9 @@ h3 {
 .wide-card .right div {
   display: flex;
   gap: 12px;
+}
+.wide-card__link {
+  text-decoration: underline;
 }
 
 #sim .left {
