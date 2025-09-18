@@ -30,6 +30,10 @@
         background-image: url('../../images/backgrounds/business-page-cover.jpg');
     }
 
+    &__personal {
+        background-image: url('../../images/backgrounds/personal-page-cover.jpg');
+    }
+
     @media only screen and (max-width: 1024px) {
         padding: 0 28px;
     }

@@ -744,6 +744,9 @@ h3 {
 .hero-container__business {
   background-image: url("../../images/backgrounds/business-page-cover.jpg");
 }
+.hero-container__personal {
+  background-image: url("../../images/backgrounds/personal-page-cover.jpg");
+}
 @media only screen and (max-width: 1024px) {
   .hero-container {
     padding: 0 28px;

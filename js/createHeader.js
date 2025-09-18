@@ -15,9 +15,9 @@ function createHeader(activePage) {
                     </ul>
                 </div>
                 <div class="nav__item">
-                    <a href="solutions.html">Personal <span class="nav__dropdown-arrow">▼</span></a>
+                    <a href="personal.html">Personal <span class="nav__dropdown-arrow">▼</span></a>
                     <ul class="nav__dropdown-menu">
-                        <li class="nav__dropdown-item"><a href="/plans">Plans & Pricing</a></li>
+                        <li class="nav__dropdown-item"><a href="plans.html">Plans & Pricing</a></li>
                     </ul>
                 </div>
                 <div class="nav__item"><a href="coverage.html">Coverage</a></div>
@@ -33,11 +33,11 @@ function createHeader(activePage) {
             <div class="nav-mobile__item"><a href="index.html">Home</a></div>
 
             <div class="nav-mobile__item">
-
                 <button class="nav-mobile__dropdown-toggle" data-target="businessDropdown">
                     Business <span class="nav-mobile__dropdown-arrow">▼</span>
                 </button>
                 <ul class="nav-mobile__dropdown-menu" id="businessDropdown">
+                    <li class="nav-mobile__dropdown-item"><a href="business.html">Business</a></li>
                     <li class="nav-mobile__dropdown-item"><a href="solutions.html">Business Solutions</a></li>
                     <li class="nav-mobile__dropdown-item"><a href="contact.html">Get a Quote</a></li>
                 </ul>
@@ -48,7 +48,8 @@ function createHeader(activePage) {
                     Personal <span class="nav-mobile__dropdown-arrow">▼</span>
                 </button>
                 <ul class="nav-mobile__dropdown-menu" id="personalDropdown">
-                    <li class="nav-mobile__dropdown-item"><a href="/plans">Plans & Pricing</a></li>
+        <li class="nav-mobile__dropdown-item"><a href="personal.html">Personal</a></li>
+                    <li class="nav-mobile__dropdown-item"><a href="plans.html">Plans & Pricing</a></li>
                 </ul>
             </div>
 
