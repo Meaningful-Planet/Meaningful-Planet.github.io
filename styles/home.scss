@@ -12,16 +12,16 @@
 }
 
 .hero-container {
-    background-image: url('../../images/backgrounds/home-bg.jpg'); // Adjust path if needed
+    background-image: url('../../images/backgrounds/landing-page-cover-2.jpg'); // Adjust path if needed
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 40px;
+    color: variables.$black;
 
     @media only screen and (max-width: 1024px) {
         padding: 0 28px;
@@ -53,6 +53,34 @@
         }
     }
 
+    &__button {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 40px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      width: fit-content;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+      &--green {
+        background: variables.$dark-green-gradient;
+        color: variables.$white;
+      }
+
+      &--white {
+        background: variables.$white;
+        color: variables.$black;
+      }
+    }
+
+    &__span {
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: normal;
+    }
 
     #content {
         text-align: center;
@@ -131,12 +159,17 @@
                 }
 
                 @media only screen and (max-width: 1024px) {
-                    flex-direction: row;
                     align-items: center;
-                    padding: 16px;
+                    padding: 16px 32px;
                     font-size: 16px;
                     gap: 16px;
-                }    
+                }
+
+                p {
+                    @media only screen and (max-width: 1024px) {
+                        text-align: center;
+                    }
+                }
 
                 img {
                     width: 64px;
@@ -152,6 +185,18 @@
     }
 }
 
+.partners {
+  &__header {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+}
+
 #home-logos-container {
     background-color: variables.$background-color;
     border-radius: 40px;
@@ -161,11 +206,12 @@
 }
 
 .logos {
-    :first-child { width: 64px; }
+    :first-child { width: 88px; }
     :nth-child(2) { width: 140px; }
-    :nth-child(3) { width: 108px; }
-    :nth-child(4) { width: 140px; }
-    :nth-child(5) { width: 64px; }
+    :nth-child(3) { width: 140px; }
+    :nth-child(4) { width: 108px; }
+    :nth-child(5) { width: 140px; }
+    :nth-child(6) { width: 64px; }
     :last-child { width: 132px; }
 }
 

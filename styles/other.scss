@@ -1,0 +1,6 @@
+/* Ensure embedded Stripe pricing table fills the available width */
+#centred-header stripe-pricing-table {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+}
