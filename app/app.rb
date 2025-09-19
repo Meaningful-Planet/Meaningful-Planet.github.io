@@ -22,6 +22,10 @@ get '/solutions' do
   erb :solutions, layout: :application
 end
 
+get '/personal' do
+  erb :personal, layout: :application
+end
+
 get '/coverage' do
   erb :coverage, layout: :application
 end
@@ -40,6 +44,10 @@ end
 
 get '/terms-and-conditions' do
   erb :terms_and_conditions, layout: :application
+end
+
+get '/modern-slavery-policy' do
+  erb :modern_slavery_policy, layout: :application
 end
 
 get '/login' do
