@@ -26,6 +26,10 @@ get '/personal' do
   erb :personal, layout: :application
 end
 
+get '/plans' do
+  erb :plans, layout: :application
+end
+
 get '/coverage' do
   erb :coverage, layout: :application
 end

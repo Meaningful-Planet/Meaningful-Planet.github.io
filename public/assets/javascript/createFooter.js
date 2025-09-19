@@ -21,7 +21,7 @@ function createFooter() {
                     <nav class="footer-nav">
                         <a href="https://www.meaningfulplanet.co.uk/articles">Articles</a>
                         <a href="https://help.meaningfulplanet.co.uk/en/">FAQs</a>
-                        <a href="terms-and-conditions.html">Privacy Policy</a>
+                        <a href="terms-and-conditions">Privacy Policy</a>
                         <a href="https://help.meaningfulplanet.co.uk/en/">Customer Support</a>
                     </nav>
                 </div>
