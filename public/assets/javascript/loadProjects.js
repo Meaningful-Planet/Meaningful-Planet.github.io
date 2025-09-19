@@ -12,7 +12,7 @@ function loadProjectCards() {
 
                     // Project Image
                     const image = document.createElement('img');
-                    image.src = `images/project-images/${project.Image}`;
+                    image.src = `/assets/images/project-images/${project.Image}`;
                     image.alt = project.Title;
                     image.classList = ["project-image"]
 
@@ -31,7 +31,7 @@ function loadProjectCards() {
 
                     const logo = document.createElement('img');
                     logo.classList.add('logo');
-                    logo.src = `images/logos/${project.Logo}`;
+                    logo.src = `/assets/images/logos/${project.Logo}`;
 
                     logoWrapper.appendChild(logo);
 

@@ -13,6 +13,22 @@ get '/' do
   erb :index, layout: :application
 end
 
+get '/solutions' do
+  erb :solutions, layout: :application
+end
+
+get '/impact' do
+  erb :impact, layout: :application
+end
+
+get '/contact' do
+  erb :contact, layout: :application
+end
+
+get '/about' do
+  erb :about, layout: :application
+end
+
 helpers do
   def image_tag(name, params = {})
     "<img src='assets/images/#{name}' alt='#{params[:alt]}' id='#{params[:id]}' class='#{params[:class]}' />"

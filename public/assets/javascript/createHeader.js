@@ -6,23 +6,23 @@ function createHeader(activePage) {
         <div id="header-content">
             <a class="logo" href="/"><img src="/assets/images/logos/1.%20Logo%20-%20Horizontal/SVG/Colour%20-%20Light%20Backgrounds.svg" alt="Meaningful Planet - sustainable telecoms management platform"></a>
             <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="solutions.html">Solutions</a>
-                <a href="impact.html">Our Impact</a>
-                <a href="about.html">About Us</a>
+                <a href="/">Home</a>
+                <a href="/solutions">Solutions</a>
+                <a href="/impact">Our Impact</a>
+                <a href="/about">About Us</a>
                 <a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a>
-                <a href="contact.html" class="secondary">Get a Quote</a>
+                <a href="/contact" class="secondary">Get a Quote</a>
             </nav>
             <a id="menu" onClick="openMobileMenu()"><img id="logo" src="/assets/images/icons/menu.svg"></a>
         </div>
 
         <div id="side-menu">
-            <a href="index.html">Home</a>
-            <a href="solutions.html">Solutions</a>
-            <a href="impact.html">Our Impact</a>
-            <a href="about.html">About Us</a>
+            <a href="/">Home</a>
+            <a href="/solutions">Solutions</a>
+            <a href="/impact">Our Impact</a>
+            <a href="/about">About Us</a>
             <a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a>
-            <a href="contact.html" class="cta">Get a Quote</a>
+            <a href="/contact" class="cta">Get a Quote</a>
             <a id="close" onClick="closeMobileMenu()"><img src="/assets/images/icons/x.svg"></a>
         </div>
     `;
