@@ -1,0 +1,150 @@
+@use "variables";
+
+.header {
+    width: 100%;
+}
+
+#header-content {
+    max-width: variables.$container-width;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: variables.$container-width) {
+        padding: 40px;
+    }
+
+    @media only screen and (max-width: 900px) {
+        padding: 28px;
+    }
+}
+
+.header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    background-color: rgba($color: white, $alpha: 0.7);
+
+    #header-content {
+        padding: 20px 0;
+
+        @media only screen and (max-width: variables.$container-width) {
+            padding: 20px 28px;
+        }
+    }
+}
+
+.logo img {
+    height: 52px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 36px;
+    color: variables.$dark-green;
+
+    @media only screen and (max-width: 900px) {
+        display: none;
+    }
+
+    a {
+        position: relative; // This allows :after to be positioned correctly
+    }
+
+    .active:after,
+    a:hover:after {  // Add a hover state for ALL links
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: rgba(variables.$dark-green, 0.3);  // This is the lower opacity version
+        opacity: 0; // Default hidden
+        transition: opacity 0.2s ease;
+    }
+
+    .active:after {
+        opacity: 1; // Active link is fully visible
+        background-color: variables.$dark-green; // Full opacity version for active
+    }
+
+    a:hover:after {
+        opacity: 1; // Show on hover
+    }
+}
+
+#menu {
+    cursor: pointer;
+
+    @media only screen and (min-width: 900px) {
+        display: none;
+    }
+}
+
+#side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 200;
+    backdrop-filter: blur(20px);
+    padding-top: 24px;
+    background-color: rgba($color: white, $alpha: 0.6);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 20px rgba(variables.$dark-green, 0.1);
+
+    & :last-child {
+        margin-bottom: 12px;
+    }
+
+    @media only screen and (min-width: variables.$container-width) {
+        display: none;
+    }
+
+    a {
+        padding: 18px;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 700;
+        color: variables.$dark-green;
+        display: block;   
+        cursor: pointer;   
+        margin-bottom: 8px !important;  
+    }
+
+    .cta {
+        padding: 12px 20px;
+        color: white;
+        margin-top: 16px;
+    }
+
+    #close img {
+        width: 20px;
+        height: 20px;
+        opacity: 0.6;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+}
+
+.open {
+    transform: translateX(0) !important;
+}

@@ -1,0 +1,97 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF359852"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<main class="hero-container">
+    <script>createHeader('Home');</script>
+
+    <section id="trustpilot" onclick="window.open('https://www.trustpilot.com/review/meaningfulplanet.co.uk', '_blank')">
+        <p>4.6 on Trustpilot</p>
+        <%= image_tag("icons/trustpilot-stars.svg", alt: "4.6-star rating on Trustpilot – verified business reviews") %>
+    </section>
+
+    <section id="content">
+        <h1>Save 30-40% on business mobile costs and help restore the wild.</h1>
+        <h5>Our intelligent business mobile solutions platform eliminates waste, cuts admin time by up to 80%, and supports UK conservation projects – all through your existing mobile spend.</h5>
+        <div class="features">
+            <div>
+                <%= image_tag("icons/icon-circle-phone.svg", alt: "Business SIMs optimization icon") %>
+                <p>Automatically right-size business mobile plans and eliminate unused SIMs across your organisation.</p>
+            </div>
+            <div>
+                <%= image_tag("icons/icon-circle-chart.svg", alt: "Business mobile cost tracking icon") %>
+                <p>Real-time business mobile usage tracking and alerts to cut overage charges and unnecessary spend.</p>
+            </div>
+            <div>
+                <%= image_tag("icons/icon-circle-leaf.svg", alt: "UK business mobile sustainability icon") %>
+                <p>10% of profits supports local UK nature restoration projects, with visible impact.</p>
+            </div>
+        </div>
+        <a href="contact.html" class="cta">Get a Quote</a>
+    </section>
+</main>
+
+<section id="home-logos-container">
+    <div class="logos">
+        <%= image_tag("logos/environmental-partners/bcn-wildlife-trust.png", alt: "BCN Wildlife Trust logo - environmental partner") %>
+        <%= image_tag("logos/environmental-partners/london-wildlife-trust.png", alt: "London Wildlife Trust logo - environmental partner") %>
+        <%= image_tag("logos/environmental-partners/hampshire-iow-wildlife-trust.png", alt: "Hampshire & IOW Wildlife Trust logo - environmental partner") %>
+        <%= image_tag("logos/environmental-partners/yorkshire-wildlife-trust.png", alt: "Yorkshire Wildlife Trust logo - environmental partner") %>
+        <%= image_tag("logos/environmental-partners/eco-network.png", alt: ".eco Network logo - environmental partner") %>
+        <%= image_tag("logos/environmental-partners/sussex-wildlife-trust.png", alt: "Sussex Wildlife Trust logo - environmental partner") %>
+    </div>
+</section>
+
+<section class="dashboard-card" id="milo">
+    <div class="left">
+        <%= image_tag("photos/dashboard.png", alt: "MILO dashboard showing mobile usage and savings") %>
+    </div>
+
+    <div class="right">
+        <h2>Take control with MILO: our intelligent business mobile SIM management platform</h2>
+        <ul>
+            <li><%= image_tag("icons/icon-cloud.svg", alt: "Business mobile cloud integration icon") %> Simple integration with live business mobile usage, cost and inventory data</li>
+            <li><%= image_tag("icons/icon-sliders.svg", alt: "Business mobile optimization icon") %> Automated savings with smart business mobile plan optimisation and waste alerts</li>
+            <li><%= image_tag("icons/icon-doc.svg", alt: "Business mobile reporting icon") %> Impact reports you can trust – ideal for sustainability tracking and internal reporting</li>
+            <li><%= image_tag("icons/icon-recycle.svg", alt: "UK business mobile sustainability icon") %> Built-in sustainability – no added admin, no extra cost</li>
+        </ul>
+    <a href="contact.html" class="cta">Find Out More</a>
+    </div>
+</section>
+
+<section class="dark-boxes">
+    <h3>How we deliver impact</h3>
+    <div id="boxes">
+        <div>
+            <%= image_tag("icons/icon-circle-tick.svg", alt: "Business mobile savings icon") %>
+            <p>Eliminate business mobile waste with verified savings from unused or oversized plans</p>
+        </div>
+        <div>
+            <%= image_tag("icons/icon-circle-handshake.svg", alt: "UK business mobile partnership icon") %>
+            <p>Delivered with expert UK partners – from business mobile network specialists to conservationists</p>
+        </div>
+        <div>
+            <%= image_tag("icons/icon-circle-leaf.svg", alt: "UK business mobile sustainability icon") %>
+            <p>10% of all profits go to UK nature restoration – and you choose the projects</p>
+        </div>
+    </div>
+</section>
+
+<section class="carousel"><div class="carousel-slide-container"></div></section>
+
+<section class="carousel-controls">
+    <%= image_tag("icons/arrow-left.svg", class: "carousel-arrow left", alt: "Previous project slide") %>
+    <div class="carousel-dots"></div>
+    <%= image_tag("icons/arrow-right.svg", class: "carousel-arrow right", alt: "Next project slide") %>
+</section>
+
+<%= script_tag("slider.js") %>
+
+<script>createFAQ()</script>
+
+<section class="cta-banner">
+    <h4>Cut costs. Cut waste. Help restore the wild.</h4>
+    <a class="cta" href="contact.html">Get Started Today</a>
+</section>
+
+<script>createFooter();</script>

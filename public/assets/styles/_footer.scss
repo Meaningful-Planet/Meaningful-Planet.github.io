@@ -1,0 +1,132 @@
+@use "variables";
+
+.footer {
+    ::selection {
+        background-color: white;
+        color: variables.$dark-green;
+    }
+    
+    position: relative;
+    background: url('/assets/images/backgrounds/footer-bg.svg') no-repeat top center;
+    background-size: cover;
+    padding: 40px 0;
+    color: white;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    p, a {
+        color: white;
+    }
+
+    .content {
+        display: flex;
+        max-width: variables.$container-width;
+        margin: 0 auto;
+        flex-direction: column;
+        width: 100%;
+        background-color: #063412;
+        border-radius: 24px;
+        padding: 32px;
+        box-sizing: border-box;
+
+        .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            @media only screen and (max-width: 500px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+
+                @media only screen and (max-width: 500px) {
+                    width: 100%;
+                }    
+            }
+        
+            .logo {
+                width: 200px;
+                height: auto;
+                margin-bottom: 20px;
+
+                @media only screen and (max-width: 500px) {
+                    width: 160px;
+                }
+            }
+        
+            #locations {
+                margin-top: 24px;
+                font-weight: 700;
+            }
+
+            .socials {
+                display: flex;
+                gap: 12px;
+        
+                img {
+                    width: 40px;
+                    height: 40px;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        
+            .right {
+                text-align: right;
+                justify-content: flex-end;
+
+                @media only screen and (max-width: 500px) {
+                    text-align: left;
+                    width: 100%;
+                    margin-top: 28px;
+                }
+            }
+        
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;        
+
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+        
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 32px;
+            border-radius: 28px;
+            background: rgba(white, 0.1);
+            font-size: 17px;
+
+            img {
+                width: 52px;
+                height: auto;
+            }
+
+            @media only screen and (max-width: 500px) {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
