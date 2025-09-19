@@ -29,6 +29,14 @@ get '/about' do
   erb :about, layout: :application
 end
 
+get '/login' do
+  redirect 'https://user.meaningfulplanet.co.uk/sign-in', 301
+end
+
+get '/articles' do
+  redirect 'https://www.meaningfulplanet.co.uk/articles', 301
+end
+
 helpers do
   def image_tag(name, params = {})
     "<img src='assets/images/#{name}' alt='#{params[:alt]}' id='#{params[:id]}' class='#{params[:class]}' />"
