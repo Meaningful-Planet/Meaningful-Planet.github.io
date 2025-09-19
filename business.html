@@ -54,10 +54,13 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
         
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/flickity.min.css">
 
         <script src="js/createHeader.js"></script>
         <script src="js/createFooter.js"></script>
         <script src="js/createFAQ.js"></script>
+        <script src="js/createPartners.js"></script>
+        <script src="js/flickity.pkgd.min.js"></script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="66bd4e70-a19a-4a35-abfe-995be7201cef";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
         
         <!-- Structured Data: Organization -->
@@ -205,8 +208,8 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF359852"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <main class="hero-container">
-            <script>createHeader('Home');</script>
+        <main class="hero-container hero-container__business">
+            <script>createHeader('Business ▼');</script>
 
             <section id="trustpilot" onclick="window.open('https://www.trustpilot.com/review/meaningfulplanet.co.uk', '_blank')">
                 <p>4.6 on Trustpilot</p>
@@ -214,36 +217,28 @@
             </section>
 
             <section id="content">
-                <h1>Save 30-40% on business mobile costs and help restore the wild.</h1>
-                <h5>Our intelligent business mobile solutions platform eliminates waste, cuts admin time by up to 80%, and supports UK conservation projects – all through your existing mobile spend.</h5>
+                <h1>A smarter business mobile network for a world that works better.</h1>
+                <h5>Improve efficency, reduce admin overhead by up to 80%, and support UK conservation projects – all through your existing business mobile spend.</h5>
                 <div class="features">
                     <div>
-                        <img src="images/icons/icon-circle-phone.svg" alt="Business SIMs optimization icon">
-                        <p>Automatically right-size business mobile plans and eliminate unused SIMs across your organisation.</p>
+                        <img class="features__icon" src="images/icons/icon-circle-phone.svg" alt="Business SIMs optimization icon">
+                        <p class="hero-container__text">No more overpriced plans. No more unused SIMs. No more
+                           overage charges.</p>
                     </div>
                     <div>
-                        <img src="images/icons/icon-circle-chart.svg" alt="Business mobile cost tracking icon">
-                        <p>Real-time business mobile usage tracking and alerts to cut overage charges and unnecessary spend.</p>
+                        <img class="features__icon" src="images/icons/icon-circle-chart.svg" alt="Business mobile cost tracking icon">
+                        <p class="hero-container__text">Unrivalled coverage and reliability on the UK's best-rated network.</p>
                     </div>
                     <div>
-                        <img src="images/icons/icon-circle-leaf.svg" alt="UK business mobile sustainability icon">
-                        <p>10% of profits supports local UK nature restoration projects, with visible impact.</p>
+                        <img class="features__icon" src="images/icons/icon-circle-leaf.svg" alt="UK business mobile sustainability icon">
+                        <p class="hero-container__text">A carbon-neutral network, good for business and good for the planet.
                     </div>
                 </div>
-                <a href="contact.html" class="cta">Get a Quote</a>
+                <a href="contact.html" class="cta">Get a Custom Quote</a>
             </section>
         </main>
 
-        <section id="home-logos-container">
-            <div class="logos">
-                <img src="images/logos/environmental-partners/bcn-wildlife-trust.png" alt="BCN Wildlife Trust logo - environmental partner">
-                <img src="images/logos/environmental-partners/london-wildlife-trust.png" alt="London Wildlife Trust logo - environmental partner">
-                <img src="images/logos/environmental-partners/hampshire-iow-wildlife-trust.png" alt="Hampshire & IOW Wildlife Trust logo - environmental partner">
-                <img src="images/logos/environmental-partners/yorkshire-wildlife-trust.png" alt="Yorkshire Wildlife Trust logo - environmental partner">
-                <img src="images/logos/environmental-partners/eco-network.png" alt=".eco Network logo - environmental partner">
-                <img src="images/logos/environmental-partners/sussex-wildlife-trust.png" alt="Sussex Wildlife Trust logo - environmental partner">
-            </div>
-        </section>
+        <script>createPartners()</script>
 
         <section class="dashboard-card" id="milo">
             <div class="left">
@@ -251,12 +246,12 @@
             </div>
 
             <div class="right">
-                <h2>Take control with MILO: our intelligent business mobile SIM management platform</h2>
+                <h2>Take control with MILO: our intelligent telecoms management platform</h2>
                 <ul>
                     <li><img src="images/icons/icon-cloud.svg" alt="Business mobile cloud integration icon" />Simple integration with live business mobile usage, cost and inventory data</li>
                     <li><img src="images/icons/icon-sliders.svg" alt="Business mobile optimization icon" />Automated savings with smart business mobile plan optimisation and waste alerts</li>
                     <li><img src="images/icons/icon-doc.svg" alt="Business mobile reporting icon" />Impact reports you can trust – ideal for sustainability tracking and internal reporting</li>
-                    <li><img src="images/icons/icon-recycle.svg" alt="UK business mobile sustainability icon" />Built-in sustainability – no added admin, no extra cost</li>
+                    <li><img src="images/icons/icon-recycle.svg" alt="UK business mobile sustainability icon" />Built-in automatic carbon offsetting – no added admin, no extra cost</li>
                 </ul>
             <a href="contact.html" class="cta">Find Out More</a>
             </div>
@@ -267,11 +262,11 @@
             <div id="boxes">
                 <div>
                     <img src="images/icons/icon-circle-tick.svg" alt="Business mobile savings icon">
-                    <p>Eliminate business mobile waste with verified savings from unused or oversized plans</p>
+                    <p>Achieve cost certainity and increased efficiency without the admin headache</p>
                 </div>
                 <div>
                     <img src="images/icons/icon-circle-handshake.svg" alt="UK business mobile partnership icon">
-                    <p>Delivered with expert UK partners – from business mobile network specialists to conservationists</p>
+                    <p>Fair pricing, transparent reporting, and support from the best in the business</p>
                 </div>
                 <div>
                     <img src="images/icons/icon-circle-leaf.svg" alt="UK business mobile sustainability icon">
@@ -298,7 +293,6 @@
             <a class="cta" href="contact.html">Get Started Today</a>
         </section>
 
-        <script>createFooter();</script>
-
+        <script>createFooter()</script>
     </body>
 </html>

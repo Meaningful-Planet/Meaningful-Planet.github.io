@@ -73,7 +73,7 @@ function setupCarouselControls(totalSlides) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('/assets/javascript//projects.json')
+    fetch('/assets/javascript/projects.json')
         .then(response => response.json())
         .then(projects => {
             // Choose specific projects you want to show (example indices 0, 1, 2)

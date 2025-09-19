@@ -2,6 +2,7 @@
 
 require 'sinatra'
 require 'sinatra/reloader' if development?
+require 'sinatra/content_for'
 require 'yaml'
 
 set :views, ['app', 'views']
@@ -27,6 +28,10 @@ end
 
 get '/about' do
   erb :about, layout: :application
+end
+
+get '/terms-and-conditions' do
+  erb :terms_and_conditions, layout: :application
 end
 
 get '/login' do

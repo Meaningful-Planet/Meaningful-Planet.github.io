@@ -14,23 +14,22 @@ function createFooter() {
                         <a target="_blank" href="https://www.linkedin.com/company/meaningful-planet/"><img src="/assets/images/social/social-linkedin.svg" alt="Follow Meaningful Planet on LinkedIn"></a>
                     </div>
 
-                    <p id="locations">Isle of Wight • Cambridge • London</p>
+                    <p id="locations">Isle of Wight • Cambridge • Inverness • London</p>
                 </div>
 
                 <div class="right">
                     <nav class="footer-nav">
-                        <a href="/">Home</a>
-                        <a href="/solutions">Solutions</a>
-                        <a href="/impact">Our Impact</a>
-                        <a href="/about">About Us</a>
-                        <a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a>
+                        <a href="https://www.meaningfulplanet.co.uk/articles">Articles</a>
+                        <a href="https://help.meaningfulplanet.co.uk/en/">FAQs</a>
+                        <a href="terms-and-conditions.html">Privacy Policy</a>
+                        <a href="https://help.meaningfulplanet.co.uk/en/">Customer Support</a>
                     </nav>
                 </div>
             </div>
 
             <div class="bottom">
                 <div>
-                    <p>© Meaningful Planet ${currentYear}</p> <!-- Dynamically insert year -->
+                    <p>© Meaningful Planet ${currentYear}</p>
                     <p>All Rights Reserved</p>
                 </div>
                 <img src="/assets/images/logos/b-corp-pending-white.png" alt="B Corp pending certification - sustainable business practices" class="certified">

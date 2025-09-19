@@ -1,8 +1,84 @@
+<% content_for :page_header_tags do %>
+    <title>About Business Mobile Solutions UK | Meaningful Planet</title>
+    <meta name="title" content="About Business Mobile Solutions UK | Meaningful Planet">
+    <meta name="description" content="Learn about Meaningful Planet, the UK's leading business mobile solutions provider. B Corp certified telecoms management platform helping UK businesses reduce mobile costs by 30-40%.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://meaningfulplanet.co.uk/about">
+    <meta property="og:title" content="About Business Mobile Solutions UK | Meaningful Planet">
+    <meta property="og:description" content="Learn about Meaningful Planet, the UK's leading business mobile solutions provider. B Corp certified telecoms management platform helping UK businesses reduce mobile costs by 30-40%.">
+    <meta property="og:image" content="https://meaningfulplanet.co.uk/images/photos/richard.jpg">
+    <meta property="og:site_name" content="Meaningful Planet">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://meaningfulplanet.co.uk/about">
+    <meta property="twitter:title" content="About Business Mobile Solutions UK | Meaningful Planet">
+    <meta property="twitter:description" content="Learn about Meaningful Planet, the UK's leading business mobile solutions provider. B Corp certified telecoms management platform.">
+    <meta property="twitter:image" content="https://meaningfulplanet.co.uk/images/photos/richard.jpg">
+
+    <link rel="canonical" href="https://meaningfulplanet.co.uk/about">
+<% end %>
+
+<% content_for :json_tags do %>
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Meaningful Planet",
+      "url": "https://meaningfulplanet.co.uk",
+                "logo": "https://meaningfulplanet.co.uk/images/logos/logo-1.png",
+      "description": "Intelligent telecoms management platform eliminating 30-40% waste from business mobile spend",
+      "additionalType": "B Corporation",
+      "areaServed": "United Kingdom",
+      "award": "B Corp Certified"
+    }
+    </script>
+    <!-- Structured Data: SoftwareApplication (MILO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "MILO",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web-based",
+      "offers": {
+        "@type": "Offer",
+        "price": "Custom",
+        "priceCurrency": "GBP"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+    <!-- Structured Data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much can businesses save on telecoms with Meaningful Planet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Businesses typically save 30-40% on their telecoms spend through automated waste elimination, right-sizing plans, and preventing overage charges."
+        }
+      }]
+    }
+    </script>
+<% end %>
+
 <script>createHeader('About Us');</script>
 
 <div id="centred-header">
     <h1>About Us</h1>
-    <p>Founded to innovate top-quality telecoms services into forces for positive environmental change.</p>
+    <p>Smarter telecoms for a world that works better.
 
 </div>
 
@@ -18,7 +94,7 @@
     </div>
     <div class="teal-block">
         <h4>Our Story</h4>
-        <p>Founded by eco-conscious entrepreneurs Nick Falkowski and Richard West, Meaningful Planet was born out of a shared passion for protecting nature and empowering others to do the same. With backgrounds in tech, product development, business telecoms,and a shared passion for the natural world, they set out to create a new kind of company - one that turns everyday telecoms services into drivers of positive change and climate impact.</p>
+        <p>Founded by eco-conscious entrepreneurs Nick Falkowski and Richard West, Meaningful Planet was born out of a shared passion for protecting nature and empowering others to do the same. With backgrounds in tech, product development, and business services ,and a shared passion for the natural world, they set out to create a new kind of company - one that turns everyday telecoms services into drivers of positive change and climate impact.</p>
     </div>
 </div>
 
@@ -143,7 +219,7 @@
 
 <div class="cta-banner">
     <h4>Saving the Planet doesn't have to cost the Earth.</h4>
-    <a class="cta" href="/contact">Get Started</a>
+    <a class="cta" href="contact">Get Started</a>
 </div>
 
 <script>createFooter();</script>

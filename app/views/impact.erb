@@ -1,3 +1,146 @@
+<% content_for :page_header_tags do %>
+    <title>Business Mobile Solutions Impact UK | Meaningful Planet</title>
+    <meta name="title" content="Business Mobile Solutions Impact UK | Meaningful Planet">
+    <meta name="description" content="Discover the sustainability impact of Meaningful Planet's business mobile solutions. B Corp certified telecoms management platform supporting UK conservation projects while reducing business mobile costs.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://meaningfulplanet.co.uk/impact">
+    <meta property="og:title" content="Business Mobile Solutions Impact UK | Meaningful Planet">
+    <meta property="og:description" content="Discover the sustainability impact of Meaningful Planet's business mobile solutions. B Corp certified telecoms management platform supporting UK conservation projects while reducing business mobile costs.">
+    <meta property="og:image" content="https://meaningfulplanet.co.uk/images/photos/app.png">
+    <meta property="og:site_name" content="Meaningful Planet">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://meaningfulplanet.co.uk/impact">
+    <meta property="twitter:title" content="Business Mobile Solutions Impact UK | Meaningful Planet">
+    <meta property="twitter:description" content="Discover the sustainability impact of Meaningful Planet's business mobile solutions. B Corp certified telecoms management platform supporting UK conservation projects.">
+    <meta property="twitter:image" content="https://meaningfulplanet.co.uk/images/photos/app.png">
+
+    <link rel="canonical" href="https://meaningfulplanet.co.uk/impact">
+<% end %>
+
+<% content_for :json_tags do %>
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+        {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+          "name": "Meaningful Planet",
+          "url": "https://meaningfulplanet.co.uk",
+                    "logo": "https://meaningfulplanet.co.uk/images/logos/logo-1.png",
+          "description": "Intelligent telecoms management platform eliminating 30-40% waste from business mobile spend",
+          "additionalType": "B Corporation",
+          "areaServed": "United Kingdom",
+          "award": "B Corp Certified"
+        }
+        </script>
+        <!-- Structured Data: SoftwareApplication (MILO) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "MILO",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web-based",
+          "offers": {
+            "@type": "Offer",
+            "price": "Custom",
+            "priceCurrency": "GBP"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "127"
+          }
+        }
+        </script>
+        <!-- Structured Data: FAQ -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "How much can businesses save on telecoms with Meaningful Planet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Businesses typically save 30-40% on their telecoms spend through automated waste elimination, right-sizing plans, and preventing overage charges."
+            }
+          }]
+        }
+        </script>
+        <!-- Structured Data: Local Business -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Meaningful Planet",
+          "description": "UK telecoms management platform supporting local conservation projects across Hampshire, Sussex, Yorkshire, Bedfordshire, Cambridgeshire, and beyond",
+          "url": "https://meaningfulplanet.co.uk",
+          "areaServed": [
+            {
+              "@type": "Place",
+              "name": "Hampshire"
+            },
+            {
+              "@type": "Place",
+              "name": "Sussex"
+            },
+            {
+              "@type": "Place",
+              "name": "Yorkshire"
+            },
+            {
+              "@type": "Place",
+              "name": "Bedfordshire"
+            },
+            {
+              "@type": "Place",
+              "name": "Cambridgeshire"
+            },
+            {
+              "@type": "Place",
+              "name": "Isle of Wight"
+            },
+            {
+              "@type": "Place",
+              "name": "Northamptonshire"
+            }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Environmental Conservation Projects",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Sussex Seagrass Restoration"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Yorkshire Peatland Conservation"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Hampshire Wildlife Corridors"
+                }
+              }
+            ]
+          }
+        }
+    </script>
+<% end %>
+
 <script>createHeader('Our Impact');</script>
 
 <div id="centred-header">
@@ -68,20 +211,27 @@
 <div id="projects-container"></div>
 
 <div class="wide-card" id="sim">
-    <div class="left">
-        <img src="/assets/images/photos/sim.jpg" alt="SIM card management - intelligent mobile optimization platform" />
-    </div>
+  <div class="left">
+    <img src="/assets/images/photos/sim.jpg" alt="SIM card management - intelligent mobile optimization platform" />
+  </div>
 
-    <div class="right">
-        <h2>Planet-Friendly SIM Solutions</h2>
-        <p>We're proudly eSIM-first, embracing both the reduced environmental footprint and advanced technology this offers.<br><br>We understand that some customers still need physical SIM cards, which is why we provide these options thoughtfully and responsibly.<br><br>Our physical SIMs are crafted from 100% recycled plastic, whilst our packaging is made from fully biodegradable UK wildflower seed paper that you can plant after use. <a href="/solutions">Learn more about our solutions</a>.</p>
-        <a href="/contact" class="cta">Get a Custom Quote</a>
-    </div>
+  <div class="right">
+    <h2>Planet-Friendly SIM Solutions</h2>
+    <p>We're proudly eSIM-first, embracing both the reduced environmental footprint and advanced technology this offers.</p>
+    <br />
+
+    <p>We understand that some customers still need physical SIM cards, which is why we provide these options thoughtfully and responsibly.</p>
+    <br />
+
+    <p>Our physical SIMs are crafted from 100% recycled plastic, whilst our packaging is made from fully biodegradable UK wildflower seed paper that you can plant after use. <a href="solutions" class="wide-card__link">Find out more here</a>.</p>
+
+    <a href="contact" class="cta">Get a Custom Quote</a>
+  </div>
 </div>
 
 <div class="cta-banner">
     <h4>Ready to cut costs and achieve your sustainability goals?</h4>
-    <a class="cta" href="/solutions">See Our Solutions</a>
+    <a class="cta" href="solutions">See Our Solutions</a>
 </div>
 
 <script>createFooter();</script>
