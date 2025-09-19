@@ -6,24 +6,59 @@ function createHeader(activePage) {
         <div id="header-content">
             <a class="logo" href="/"><img src="images/logos/1.%20Logo%20-%20Horizontal/SVG/Colour%20-%20Light%20Backgrounds.svg" alt="Meaningful Planet - sustainable telecoms management platform"></a>
             <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="solutions.html">Solutions</a>
-                <a href="impact.html">Our Impact</a>
-                <a href="about.html">About Us</a>
-                <a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a>
-                <a href="contact.html" class="secondary">Get a Quote</a>
+                <div class="nav__item"><a href="index.html">Home</a></div>
+                <div class="nav__item">
+                    <a href="business.html">Business <span class="nav__dropdown-arrow">▼</span></a>
+                    <ul class="nav__dropdown-menu">
+                        <li class="nav__dropdown-item"><a href="solutions.html">Business Solutions</a></li>
+                        <li class="nav__dropdown-item"><a href="contact.html">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="nav__item">
+                    <a href="personal.html">Personal <span class="nav__dropdown-arrow">▼</span></a>
+                    <ul class="nav__dropdown-menu">
+                        <li class="nav__dropdown-item"><a href="plans.html">Plans & Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="nav__item"><a href="coverage.html">Coverage</a></div>
+                <div class="nav__item"><a href="impact.html">Our Impact</a></div>
+                <div class="nav__item"><a href="about.html">About Us</a></div>
+                <div class="nav__item"><a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a></div>
+                <div class="nav__item"><a href="contact.html" class="secondary">Get a Quote</a></div>
             </nav>
             <a id="menu" onClick="openMobileMenu()"><img id="logo" src="images/icons/menu.svg"></a>
         </div>
 
-        <div id="side-menu">
-            <a href="index.html">Home</a>
-            <a href="solutions.html">Solutions</a>
-            <a href="impact.html">Our Impact</a>
-            <a href="about.html">About Us</a>
-            <a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a>
-            <a href="contact.html" class="cta">Get a Quote</a>
-            <a id="close" onClick="closeMobileMenu()"><img src="images/icons/x.svg"></a>
+        <div class="nav-mobile">
+            <div class="nav-mobile__item"><a href="index.html">Home</a></div>
+
+            <div class="nav-mobile__item">
+                <button class="nav-mobile__dropdown-toggle" data-target="businessDropdown">
+                    Business <span class="nav-mobile__dropdown-arrow">▼</span>
+                </button>
+                <ul class="nav-mobile__dropdown-menu" id="businessDropdown">
+                    <li class="nav-mobile__dropdown-item"><a href="business.html">Business</a></li>
+                    <li class="nav-mobile__dropdown-item"><a href="solutions.html">Business Solutions</a></li>
+                    <li class="nav-mobile__dropdown-item"><a href="contact.html">Get a Quote</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-mobile__item">
+                <button class="nav-mobile__dropdown-toggle" data-target="personalDropdown">
+                    Personal <span class="nav-mobile__dropdown-arrow">▼</span>
+                </button>
+                <ul class="nav-mobile__dropdown-menu" id="personalDropdown">
+        <li class="nav-mobile__dropdown-item"><a href="personal.html">Personal</a></li>
+                    <li class="nav-mobile__dropdown-item"><a href="plans.html">Plans & Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-mobile__item"><a href="coverage.html">Coverage</a></div>
+            <div class="nav-mobile__item"><a href="impact.html">Our Impact</a></div>
+            <div class="nav-mobile__item"><a href="about.html">About Us</a></div>
+            <div class="nav-mobile__item"><a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a></div>
+            <div class="nav-mobile__item"><a href="contact.html" class="cta">Get a Quote</a></div>
+            <div class="nav-mobile__item"><a onClick="closeMobileMenu()"><img class="nav-mobile__close-icon" src="images/icons/x.svg"></a></div>
         </div>
     `;
 
@@ -58,8 +93,22 @@ function createHeader(activePage) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownToggles = document.querySelectorAll('.nav-mobile__dropdown-toggle');
+
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('data-target');
+            const dropdown = document.getElementById(targetId);
+
+            this.classList.toggle('active');
+            dropdown.classList.toggle('active');
+        });
+    });
+});
+
 function openMobileMenu() {
-    var sidebar = document.getElementById("side-menu");
+    var sidebar = document.querySelector(".nav-mobile");
     sidebar.classList.toggle('open');
 
     // If sidebar is open, set body overflow to hidden. If not, set it to auto.
@@ -69,7 +118,7 @@ function openMobileMenu() {
 }
 
 function closeMobileMenu() {
-    var sidebar = document.getElementById("side-menu");
+    var sidebar = document.querySelector(".nav-mobile");
     sidebar.classList.remove('open');
 
     document.body.style.overflow = 'auto';

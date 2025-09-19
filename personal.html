@@ -60,6 +60,7 @@
         <script src="js/createFooter.js"></script>
         <script src="js/createFAQ.js"></script>
         <script src="js/createReviews.js"></script>
+        <script src="js/loadProjects.js"></script>
         <script src="js/flickity.pkgd.min.js"></script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="66bd4e70-a19a-4a35-abfe-995be7201cef";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
         
@@ -208,8 +209,8 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF359852"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <main class="hero-container hero-container__main">
-            <script>createHeader('Home');</script>
+        <main class="hero-container hero-container__personal">
+            <script>createHeader('Personal ▼');</script>
 
             <section id="trustpilot" onclick="window.open('https://www.trustpilot.com/review/meaningfulplanet.co.uk', '_blank')">
                 <p>4.6 on Trustpilot</p>
@@ -217,24 +218,33 @@
             </section>
 
             <section id="content">
-                <h1>A new kind of mobile network for a world that works better.</h1>
-                <h5>We deliver top-rated coverage, flexible contracts, and smart SIM management - plus 10% of profit funds meaningful nature restoration projects across the UK.</h5>
+                <h1>The sustainable mobile network that restores nature.</h1>
+                <h5>Transform your mobile contract into a force for good: 10% of every bill goes directly to protecting and restoring nature across the UK.</h5>
+
+                <div class="hero-container__buttons">
+                  <a href="impact.html" class="hero-container__button hero-container__button--green">Find Out More</a>
+                  <a href="plans.html" class="hero-container__button hero-container__button--white">Explore SIM Plans</a>
+                </div>
+
                 <div class="features">
                     <div>
-                        <img class="features__icon" src="images/icons/icon-business.svg" alt="Business SIMs icon">
-                        <p class="hero-container__text">Simple, scalable, and sustainable – designed for businesses of all sizes.</p>
+                        <img class="hero-container__image" src="images/icons/icon-phone-pin.svg" alt="Phone icon">
+                        <p class="hero-container__text hero-container__text--center">Help Restore the Wild</p>
 
-                        <a href="business.html" class="hero-container__button hero-container__button--green">Business Solutions</a>
-
-                        <span class="hero-container__span hero-container__span--italic">For companies and organisations</span>
+                        <span class="hero-container__span hero-container__span--center">10% of every bill funds projects in the UK focused on restoring nature, helping the environment, and enhancing biodiversity.</span>
                     </div>
                     <div>
-                        <img class="features__icon" src="images/icons/icon-domestic.svg" alt="Domestic SIMs icon">
-                        <p class="hero-container__text">Personal SIMs with leading coverage and supporting UK nature built-in.</p>
+                        <img class="hero-container__image" src="images/icons/icon-forest.svg" alt="Forest icon">
+                        <p class="hero-container__text hero-container__text--center">The UK’s Best Rated Network</p>
 
-                        <a href="personal.html" class="hero-container__button hero-container__button--white">Personal Plans</a>
+                        <span class="hero-container__span hero-container__span--center">Enjoy the best network coverage and data speeds in the UK, powered by the same network infrastructure used by EE.</span>
+                    </div>
 
-                        <span class="hero-container__span hero-container__span--italic">For individuals and families</span>
+                    <div>
+                        <img class="hero-container__image" src="images/icons/icon-roaming.svg" alt="Roaming icon">
+                        <p class="hero-container__text hero-container__text--center">Free EU Roaming as Standard</p>
+
+                        <span class="hero-container__span hero-container__span--center">10% of every bill funds projects in the UK focused on restoring nature, helping the environment, and enhancing biodiversity.</span>
                     </div>
                 </div>
             </section>
@@ -254,42 +264,85 @@
           </div>
         </section>
 
-        <section class="dark-boxes">
-            <h3>A new, fairer kind of mobile network</h3>
+        <section class="reviews">
+           <h3 class="reviews__head">Join thousands of happy customers making a difference</h3>
+        </section>
+        <script>createReviews()</script>
+
+        <section class="light-boxes">
             <div id="boxes">
-                <div>
-                    <img src="images/icons/icon-medal.svg" alt="Business mobile savings icon">
-                    <p>The best-rated UK network for coverage and mobile data speeds.*</p>
+                <div class="light-boxes__box">
+                  <div class="light-boxes__box-row">
+                    <h4>Keep the same number when you switch</h4>
+                    <p>Switching to us is straightforward, and you can even keep the same number when you switch to us. Zero hassle, no stress.</p>
+                  </div>
+                  <div class="light-boxes__box-row">
+                    <img src="images/icons/icon-keep-number.svg" alt="Keep number icon">
+                  </div>
                 </div>
-                <div>
-                    <img src="images/icons/icon-circle-handshake.svg" alt="UK business mobile partnership icon">
-                    <p>Fair, transparent pricing and human-led customer support.</p>
+                <div class="light-boxes__box">
+                  <div class="light-boxes__box-row">
+                    <h4>Fair and transparent pricing as standard</h4>
+                    <p>We keep pricing clear and simple, ensuring its easy to understand your bill, providing peace of mind. No hidden fees, no surprise charges.</p>
+                  </div>
+                  <div class="light-boxes__box-row">
+                    <img src="images/icons/icon-thumb-up.svg" alt="Thumb up icon">
+                  </div>
                 </div>
-                <div>
-                    <img src="images/icons/icon-circle-leaf.svg" alt="UK business mobile sustainability icon">
-                    <p>10% of profits go directly to supporting nature restoration in the UK.</p>
-                </div>    
+                <div class="light-boxes__box">
+                  <div class="light-boxes__box-row">
+                    <h4>Don’t compromise on coverage</h4>
+                    <p>Enjoy the best network coverage and data speeds in the UK, powered by the same network infrastructure used by EE.</p>
+                  </div>
+                  <div class="light-boxes__box-row">
+                    <img src="images/icons/icon-5g.svg" alt="5G icon">
+                  </div>
+                </div>
+                <div class="light-boxes__box">
+                  <div class="light-boxes__box-row">
+                    <h4>Roam like Home all across Europe</h4>
+                    <p>We've got your back wherever life takes you, with Free EU Roaming included in all our SIM plans.</p>
+                  </div>
+                  <div class="light-boxes__box-row">
+                    <img src="images/icons/icon-eu-roaming.svg" alt="EU Roaming icon">
+                  </div>
+                </div>
             </div>
         </section>
 
-        <section class="carousel"><div class="carousel-slide-container"></div></section>
-        
-        <section class="carousel-controls">
-            <img class="carousel-arrow left" src="images/icons/arrow-left.svg" alt="Previous project slide">
-            <div class="carousel-dots"></div>
-            <img class="carousel-arrow right" src="images/icons/arrow-right.svg" alt="Next project slide">
+        <section class="cta-banner">
+          <h4>A network that’s better for you and for nature.</h4>
+          <a class="cta" href="plans.html">View Plans</a>
         </section>
 
-        <script src="js/slider.js"></script>
-
-
-        <script>createFAQ()</script>
+        <h3 class="centred-title">Current Projects</h3>
+        <div id="projects-container"></div>
 
         <section class="cta-banner">
-            <h4>Saving the Planet doesn't have to cost the Earth.</h4>
-            <a class="cta" href="contact.html">Get Started</a>
+          <h4>A network that’s better for you and for nature.</h4>
+          <a class="cta" href="plans.html">View Plans</a>
         </section>
 
+        <div class="wide-card" id="sim">
+          <div class="left">
+            <img src="images/photos/sim.jpg" alt="SIM card management - intelligent mobile optimization platform" />
+          </div>
+
+          <div class="right">
+            <h2>Planet-Friendly SIM Solutions</h2>
+            <p>We're proudly eSIM-first, embracing both the reduced environmental footprint and advanced technology this offers.</p>
+            <br />
+
+            <p>We understand that some customers still need physical SIM cards, which is why we provide these options thoughtfully and responsibly.</p>
+            <br />
+
+            <p>Our physical SIMs are crafted from 100% recycled plastic, whilst our packaging is made from fully biodegradable UK wildflower seed paper that you can plant after use. <a href="solutions.html" class="wide-card__link">Find out more here</a>.</p>
+
+            <a href="contact.html" class="cta">Get a Custom Quote</a>
+          </div>
+        </div>
+
+        <script>createFAQ()</script>
         <script>createFooter();</script>
     </body>
 </html>

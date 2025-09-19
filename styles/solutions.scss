@@ -3,6 +3,8 @@
 #network-coverage-container {
     display: flex;
     justify-content: center;
+
+    margin: 0px 28px;
 }
 
 iframe {
@@ -115,6 +117,12 @@ iframe {
     }
 
     .plan-details {
+        padding: 40px 0px;
+
+        @media only screen and (max-width: 1024px) {
+            padding: 10px 0px;
+        }
+
         @media only screen and (max-width: variables.$container-width) {
             margin: 28px;
         }

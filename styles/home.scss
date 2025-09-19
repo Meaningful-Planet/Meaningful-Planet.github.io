@@ -3,28 +3,51 @@
 #header-content {
     // On the home page, the hero-container already provides padding at smaller resolutions, so we ignore the padding rules that the other pages use.
     @media only screen and (max-width: variables.$container-width) {
-        padding: 40px 0;
+        padding: 40px;
     }
 
-    @media only screen and (max-width: 900px) {
-        padding: 28px 0;
+    @media only screen and (max-width: 1024px) {
+        padding: 28px;
     }
 }
 
 .hero-container {
-    background-image: url('../../images/backgrounds/home-bg.jpg'); // Adjust path if needed
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 40px;
+    color: variables.$black;
 
-    @media only screen and (max-width: 900px) {
+    &__main {
+        background-image: url('../../images/backgrounds/landing-page-cover.jpg');
+    }
+
+    &__business {
+        background-image: url('../../images/backgrounds/business-page-cover.jpg');
+    }
+
+    &__personal {
+        background-image: url('../../images/backgrounds/personal-page-cover.jpg');
+        height: 1100px;
+
+        @media only screen and (max-width: 1024px) {
+          height: 1470px;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
         padding: 0 28px;
+    }
+
+    &__image {
+      margin: 0 auto;
+      display: block;
+      width: 150px;
+      height: 150px;
     }
 
     #trustpilot {
@@ -43,16 +66,76 @@
         &.fixed {
             margin-top: 208px !important;
 
-            @media only screen and (max-width: 900px) {
+            @media only screen and (max-width: 1024px) {
                 margin-top: 148px !important;
             }
         }
 
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 1024px) {
             margin-top: 32px;
         }
     }
 
+    &__buttons {
+      padding: 0px 0px 50px 0px;
+      display: flex;
+      gap: 25px;
+    }
+
+    &__button {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 40px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      width: fit-content;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+      @media only screen and (max-width: 1024px) {
+        padding: 16px 22px;
+        font-size: 16px;
+      }
+
+      &:hover {
+        transform: scale(0.95);
+      }
+
+      &--green {
+        background: variables.$dark-green-gradient;
+        color: variables.$white;
+      }
+
+      &--white {
+        background: variables.$white;
+        color: variables.$black;
+      }
+    }
+
+    &__span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+
+      &--italic {
+        font-style: italic;
+      }
+
+      &--center {
+        text-align: center;
+      }
+    }
+
+    &__text {
+      &--center {
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        text-align: center;
+      }
+    }
 
     #content {
         text-align: center;
@@ -65,7 +148,7 @@
             line-height: 1.3;
             font-weight: 900;
 
-            @media only screen and (max-width: 900px) {
+            @media only screen and (max-width: 1024px) {
                 font-size: 28px;
             }
         }
@@ -76,7 +159,7 @@
             margin-top: 16px;
             margin-bottom: 40px;
 
-            @media only screen and (max-width: 900px) {
+            @media only screen and (max-width: 1024px) {
                 font-size: 16px;
                 margin-bottom: 24px;
             }
@@ -90,7 +173,7 @@
             margin-top: 40px;
             margin-bottom: 88px;
 
-            @media only screen and (max-width: 900px) {
+            @media only screen and (max-width: 1024px) {
                 margin-bottom: 44px;
             }
         }
@@ -100,9 +183,19 @@
             display: flex;
             gap: 24px;
 
-            @media only screen and (max-width: 900px) {
+            @media only screen and (max-width: 1024px) {
                 flex-direction: column;
                 gap: 12px;
+            }
+
+            &__icon {
+                width: 64px;
+                height: 64px;
+
+                @media only screen and (max-width: 1024px) {
+                    width: 52px;
+                    height: 52px;
+                }
             }
     
             div {
@@ -130,26 +223,27 @@
                     }
                 }
 
-                @media only screen and (max-width: 900px) {
-                    flex-direction: row;
+                @media only screen and (max-width: 1024px) {
                     align-items: center;
-                    padding: 16px;
+                    padding: 16px 32px;
                     font-size: 16px;
                     gap: 16px;
-                }    
-
-                img {
-                    width: 64px;
-                    height: 64px;
-
-                    @media only screen and (max-width: 900px) {
-                        width: 52px;
-                        height: 52px;
-                    }
                 }
             }
         }
     }
+}
+
+.partners {
+  &__header {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
 }
 
 #home-logos-container {
@@ -161,11 +255,12 @@
 }
 
 .logos {
-    :first-child { width: 64px; }
+    :first-child { width: 88px; }
     :nth-child(2) { width: 140px; }
-    :nth-child(3) { width: 108px; }
-    :nth-child(4) { width: 140px; }
-    :nth-child(5) { width: 64px; }
+    :nth-child(3) { width: 140px; }
+    :nth-child(4) { width: 108px; }
+    :nth-child(5) { width: 140px; }
+    :nth-child(6) { width: 64px; }
     :last-child { width: 132px; }
 }
 
@@ -304,6 +399,77 @@
     }
 }
 
+.light-boxes {
+  max-width: variables.$container-width;
+  margin: 64px auto 32px auto;
+
+  @media only screen and (max-width: variables.$container-width) {
+    margin: 64px 28px 32px 28px;
+  }
+
+  &__box {
+    flex: 2 0 42%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 12px;
+    background-color: variables.$white;
+    border-radius: 24px;
+    box-shadow: variables.$double-shadow;
+
+    @media only screen and (max-width: variables.$container-width) {
+      flex-direction: row;
+      align-items: center;
+      padding: 24px;
+    }
+  }
+
+  &__box-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @media only screen and (max-width: variables.$container-width) {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    img {
+      @media only screen and (max-width: 1024px) {
+        width: 100px;
+        height: 100px;
+      }
+
+      @media only screen and (min-width: 1025px) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    h4 {
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      color: variables.$black;
+      padding-bottom: 50px;
+    }
+
+
+    p {
+      color: variables.$black;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
 .carousel {
     position: relative;
     max-width: variables.$container-width;
@@ -425,4 +591,62 @@
 
 .carousel-dot.active {
     background-color: rgba(variables.$dark-green, 1);
+}
+
+.reviews {
+    padding: 30px;
+
+    &__rating {
+        height: 25px;
+    }
+
+    &__review {
+        border-radius: 8px;
+        width: 282px;
+        margin: 0px 10px;
+        opacity: 0.8;
+
+        &:hover {
+            transition: transform 0.3s ease;
+            transform: translate3d(0px, 0px, 0px) scale3d(1.03, 1.03, 1.03) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+            box-shadow: 0 10px 15px -3px #0006;
+            opacity: 1;
+        }
+    }
+
+    &__review-body {
+        padding: 30px;
+        display: block;
+    }
+
+    &__head {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 30px;
+      margin-top: 0px;
+    }
+
+    &__header {
+        color: variables.$white;
+        margin: 0;
+        padding: 20px 0px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    &__text {
+        color: variables.$white;
+    }
+
+    &__reviewer {
+        color: variables.$white;
+        text-align: right;
+    }
+}
+
+.flickity-viewport {
+    padding: 30px 0px;
 }

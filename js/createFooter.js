@@ -14,13 +14,13 @@ function createFooter() {
                         <a target="_blank" href="https://www.linkedin.com/company/meaningful-planet/"><img src="images/social/social-linkedin.svg" alt="Follow Meaningful Planet on LinkedIn"></a>
                     </div>
 
-                    <p id="locations">Isle of Wight • Cambridge • London</p>
+                    <p id="locations">Isle of Wight • Cambridge • Inverness • London</p>
                 </div>
 
                 <div class="right">
                     <nav class="footer-nav">
                         <a href="index.html">Home</a>
-                        <a href="solutions.html">Solutions</a>
+                        <a href="coverage.html">Coverage</a>
                         <a href="impact.html">Our Impact</a>
                         <a href="about.html">About Us</a>
                         <a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a>

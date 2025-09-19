@@ -20,13 +20,52 @@ h3 {
         font-weight: 700;
         padding: 14px 36px;
     }
+}
 
-    div {
-        display: flex;
-        gap: 12px;
+.centred-header {
+    &--coverage {
+        @media only screen and (max-width: 1024px) {
+            padding: 0px 20px;
+        }
 
-        @media only screen and (max-width: 600px) {
-            flex-direction: column;
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-bottom: 0px !important;
+
+            span {
+                text-decoration: underline;
+            }
+        }
+
+        h2 {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        h5 {
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 40px;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
     }
 }
