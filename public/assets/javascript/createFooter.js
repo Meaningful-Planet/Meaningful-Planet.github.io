@@ -19,10 +19,10 @@ function createFooter() {
 
                 <div class="right">
                     <nav class="footer-nav">
-                        <a href="index.html">Home</a>
-                        <a href="solutions.html">Solutions</a>
-                        <a href="impact.html">Our Impact</a>
-                        <a href="about.html">About Us</a>
+                        <a href="/">Home</a>
+                        <a href="/solutions">Solutions</a>
+                        <a href="/impact">Our Impact</a>
+                        <a href="/about">About Us</a>
                         <a href="https://user.meaningfulplanet.co.uk/sign-in">Login</a>
                     </nav>
                 </div>
