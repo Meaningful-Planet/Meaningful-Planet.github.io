@@ -1,0 +1,4 @@
+_redirects
+
+/articles   https://www.meaningfulplanet.co.uk/articles   302
+/login      https://user.meaningfulplanet.co.uk/sign-in   302
