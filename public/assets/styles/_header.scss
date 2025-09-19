@@ -1,0 +1,253 @@
+@use "variables";
+
+.header {
+    width: 100%;
+}
+
+#header-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: variables.$container-width) {
+        padding: 40px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        padding: 28px;
+    }
+}
+
+.header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    background-color: rgba($color: white, $alpha: 0.7);
+
+    #header-content {
+        padding: 20px 0;
+
+        @media only screen and (max-width: variables.$container-width) {
+            padding: 20px 28px;
+        }
+    }
+}
+
+.logo img {
+    height: 52px;
+    width: auto;
+}
+
+#menu {
+    cursor: pointer;
+
+    @media only screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.open {
+    transform: translateX(0) !important;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 28px;
+    color: variables.$dark-green;
+
+    @media only screen and (max-width: 1200px) {
+        gap: 20px;
+    }
+
+    @media only screen and (max-width: 1100px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        display: none;
+    }
+
+    a {
+        position: relative; // This allows :after to be positioned correctly
+    }
+
+    .active:after,
+    a:hover:after {  // Add a hover state for ALL links
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: rgba(variables.$dark-green, 0.3);  // This is the lower opacity version
+        opacity: 0; // Default hidden
+        transition: opacity 0.2s ease;
+    }
+
+    .active:after {
+        opacity: 1; // Active link is fully visible
+        background-color: variables.$dark-green; // Full opacity version for active
+    }
+
+    a:hover:after {
+        opacity: 1; // Show on hover
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__dropdown-arrow {
+        margin-left: 5px;
+        font-size: 12px;
+        transition: transform 0.3s;
+        display: inline-block;
+    }
+
+    &__dropdown-menu {
+        position: absolute;
+        top: 36px;
+        left: -60px;
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 0;
+        min-width: 200px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        z-index: 100;
+        list-style: none;
+        border: 1px solid gray;
+        padding: 4px;
+    }
+
+    &__item:hover &__dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__item:hover &__dropdown-arrow {
+        transform: rotate(180deg);
+    }
+
+    &__dropdown-item {
+        padding: 14px 20px;
+
+        &:hover {
+            background-color: #f8f9fa;
+        }
+    }
+}
+
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 200;
+    backdrop-filter: blur(20px);
+    padding-top: 24px;
+    background-color: rgba($color: white, $alpha: 0.6);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 20px rgba(variables.$dark-green, 0.1);
+
+    @media only screen and (min-width: variables.$container-width) {
+        display: none;
+    }
+
+    a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        color: variables.$dark-green;
+        display: block;   
+        cursor: pointer;   
+        margin-bottom: 8px !important;  
+    }
+
+    .cta {
+        padding: 12px 20px;
+        color: white;
+        margin-top: 16px;
+    }
+
+    &__close-icon {
+        width: 20px;
+        height: 20px;
+        opacity: 0.6;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    &__dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 8px;
+
+        &.active {
+            .nav-mobile__dropdown-arrow {
+                display: inline-block;
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    &__dropdown-arrow {
+        transition: transform 0.3s;
+        font-size: 12px;
+        transform: rotate(270deg);
+        display: inline-block;
+    }
+
+    &__dropdown-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        list-style: none;
+        text-align: center;
+
+        &.active {
+            max-height: 400px;
+        }
+    }
+
+    &__dropdown-item {
+        padding: 0px;
+        margin: 0px;
+        text-decoration: underline;
+
+        a {
+            font-size: 16px !important;
+        }
+    }
+}

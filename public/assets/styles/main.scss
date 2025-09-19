@@ -1,0 +1,254 @@
+@use "variables";
+
+::selection {
+    background-color: #1E7255;
+    color: white;
+}
+
+* {
+    font-family: "Figtree", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: variables.$black;
+}
+
+body {
+    background-color: variables.$background-color;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 28px;
+
+    @media only screen and (max-width: variables.$container-width) {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
+
+.cta {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 16px 36px;
+    background: variables.$dark-green-gradient;
+    color: white;
+    border-radius: 40px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    @media only screen and (min-width: 800px) {
+        &:hover {
+            background: variables.$dark-green-gradient-hover;
+            color: white;
+            transform: scale(0.95);
+        }
+    }
+}
+
+.logos {
+    max-width: variables.$container-width;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -ms-overflow-style: none; // For IE/Edge
+
+    img {
+        height: auto;
+        filter: grayscale(100%);
+    }
+
+    @media only screen and (max-width: variables.$container-width) {
+        padding: 0 28px;
+        gap: 24px;
+        width: 100%;
+        overflow: scroll;
+        box-sizing: border-box;
+    }    
+
+    &::-webkit-scrollbar { // For Chrome/Safari
+        display: none;
+    }
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .tag {
+        background: grey;
+        color: white;
+        padding: 4px 12px;
+        font-weight: 600;
+        border-radius: 20px;
+        font-size: 15px;
+
+        @media only screen and (max-width: 800px) {
+            font-size: 14px;
+            padding: 2px 8px;
+        }    
+    }
+
+    .biodiversity {
+        background: green;
+    }
+
+    .climate-action {
+        background-color: #6495ED;
+    }
+}
+
+.secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 80px;
+    transition: transform 0.3s ease;
+    color: variables.$dark-green;
+    border: 2px solid variables.$dark-green;
+    cursor: pointer;
+
+    @media only screen and (min-width: 800px) {
+        &:hover {
+            background: variables.$dark-green-gradient;
+            color: white;
+            transform: scale(0.93);
+            opacity: 1 !important;
+        }
+
+        &:hover:after {
+            display: none;
+        }
+    }
+}
+
+.cta-banner {
+    box-sizing: border-box;
+    background: variables.$dark-green-gradient;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: variables.$container-width;
+    margin: 80px auto 40px auto;
+    border-radius: 24px;
+    padding: 36px;
+
+    @media only screen and (max-width: variables.$container-width) {
+        margin: 28px;
+        flex-direction: column;
+        padding: 24px;
+        gap: 20px;
+        align-items: stretch;
+
+        .cta {
+            text-align: center;
+        }
+    }
+
+    h4 {
+        color: white;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        background: rgba(black, 0.15);
+        border-radius: 40px;
+        overflow: hidden;
+
+        input[type="email"] {
+            border: none;
+            padding: 16px 16px 16px 28px;
+            background: transparent;
+            color: white;
+            outline: none;
+            flex: 1;
+            font-size: 16px;
+            min-width: 120px;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        button {
+            border: none;
+            background: white;
+            width: 80px;
+            height: 48px;
+            cursor: pointer;
+            margin: 4px;
+            padding-top: 4px;
+            padding-right: 4px;
+            border-radius: 48px;
+            transition: transform 0.3s ease;
+
+            @media only screen and (min-width: 800px) {
+                &:hover {
+                    transform: scale(0.93);
+                }    
+            }
+        }
+    }
+
+    .cta {
+        background: white;
+        color: variables.$dark-green;
+    }
+
+    ::selection {
+        background-color: white;
+        color: variables.$dark-green;
+    }
+}
+
+#centred-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+
+    h1 {
+        margin-bottom: 8px;
+        font-size: 36px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 800px;
+        padding: 0;
+        margin: 0 auto 24px;
+    }
+
+    @media only screen and (max-width: variables.$container-width) {
+        padding: 0 28px;
+        margin-top: 12px;
+    }
+}
+
+#centred-header.fixed {
+    padding-top: 136px !important;
+}
+
+.sib-form.fixed {
+    padding-top: 160px;
+}
