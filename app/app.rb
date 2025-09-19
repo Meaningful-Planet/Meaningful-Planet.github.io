@@ -14,8 +14,16 @@ get '/' do
   erb :index, layout: :application
 end
 
+get '/business' do
+  erb :business, layout: :application
+end
+
 get '/solutions' do
   erb :solutions, layout: :application
+end
+
+get '/coverage' do
+  erb :coverage, layout: :application
 end
 
 get '/impact' do
